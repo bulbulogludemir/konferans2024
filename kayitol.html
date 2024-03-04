@@ -57,19 +57,19 @@
       paketlerPopup.style.display = 'none';
   });
 
-  // Form gönderildikten sonra bilet butonu
-  formIframe.addEventListener('load', () => { 
-      try {
-          const formDoc = formIframe.contentDocument || formIframe.contentWindow.document;
-          const submissionStatus = formDoc.querySelector(/* Google Formunuzdaki başarı mesajının seçicisini bulun */);
+// Form gönderildikten sonra bilet butonu
+formIframe.addEventListener('load', () => { 
+   try {
+       const formDoc = formIframe.contentDocument || formIframe.contentWindow.document;
+       const submissionStatus = formDoc.querySelector('.thank-you');
 
-          if (submissionStatus) { 
-              biletAlButonu.style.display = 'block';
-          }
-      } catch (error) {
-          console.error("Form kontrol edilemedi:", error);
-      }
-  });
+       if (submissionStatus) { 
+           biletAlButonu.style.display = 'block';
+       }
+   } catch (error) {
+       console.error("Form kontrol edilemedi:", error);
+   }
+});
 </script>
 
 
