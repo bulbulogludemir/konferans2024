@@ -149,7 +149,7 @@ body {
 
   @media (max-width: 768px) {
     /* Mobil cihazlar için stiller */
-    .main-container {
+    .main {
       flex-direction: column;
     }
   }
