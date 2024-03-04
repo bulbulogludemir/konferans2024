@@ -48,6 +48,7 @@ body {
     font-weight: bold;
     display: flex;
     justify-content: center;
+    text-decoration: none;
   }
   
   .kayit-ol:hover {
