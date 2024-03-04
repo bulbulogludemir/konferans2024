@@ -73,6 +73,13 @@ body {
   
   main {
     padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 960px; /* Maksimum genişlik */
+    margin: 0 auto; /* Yatay olarak ortala */
   }
 
   .paketleri-gor {
@@ -95,8 +102,7 @@ body {
 }
 
 .bilet-satin-al {
-    /* "paketleri-gor" ile benzer stil ama farklı renk */
-    background-color: #006838; /* Yeşil arka plan */
+    background-color: #e21111;
     color: #fff;
     border: none;
     border-radius: 10px;
@@ -110,7 +116,7 @@ body {
 }
 
 .bilet-satin-al:hover {
-   background-color: #004d29; /* Hover efekti */
+   background-color: #c50e0e;
 }
 
   footer { 
@@ -139,4 +145,11 @@ body {
   
   .telif-hakkı {
     margin: 0;
+  }
+
+  @media (max-width: 768px) {
+    /* Mobil cihazlar için stiller */
+    .main-container {
+      flex-direction: column;
+    }
   }
