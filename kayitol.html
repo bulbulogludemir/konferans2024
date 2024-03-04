@@ -19,18 +19,19 @@
    <a href="./konferans.html">Konferans</a>
    <a href="./takımlar.html">Takımlar</a>
    <a href="./otel.html">Otel</a>
-   <a href="#" class="paketler-butonu">Paketler</a>
   </nav>
   <a href="./kayitol.html" class="kayit-ol">KAYIT OLUN</a>
  </header>
  <main>
 
-  <div class="form-container">
-    <div class="form">
-      <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdgAWA_2r4y7w74C-cmTnFPeKQOgtMQAB5nQumeFuIondn7UA/viewform?embedded=true" width="640" height="1199" frameborder="0" marginheight="0" marginwidth="0">Yükleniyor…</iframe>
+  <main>
+    <div class="form-container">
+      <div class="form">
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdgAWA_2r4y7w74C-cmTnFPeKQOgtMQAB5nQumeFuIondn7UA/viewform?embedded=true" width="640" height="1199" frameborder="0" marginheight="0" marginwidth="0">Yükleniyor…</iframe>
+      </div>
     </div>
-    <a href="https://www.antalyaseminer.com" class="bilet-al-butonu" style="display: none;">Bilet Al</a> 
-  </div>
+    <button class="paketleri-gor">Paketleri Gör</button>
+    <button class="bilet-satin-al">Bilet Satın Al</button>
 
  </main>
  <footer>
@@ -42,36 +43,11 @@
  </footer>
 
  <script>
-  const paketlerButonu = document.querySelector('.paketler-butonu');
-  const paketlerPopup = document.querySelector('.paketler-popup'); 
-  const popupKapat = document.querySelector('.popup-kapat'); 
-  const formIframe = document.querySelector('.form iframe');
-  const biletAlButonu = document.querySelector('.bilet-al-butonu');
-
-  // Paketler butonu işlevselliği
-  paketlerButonu.addEventListener('click', () => {
-      paketlerPopup.style.display = 'block'; 
+  let biletAlButonu = document.querySelector('.bilet-satin-al');
+  biletAlButonu.addEventListener('click', function() {
+      window.location.href = 'https://www.antalyaseminer.com'; 
   });
-
-  popupKapat.addEventListener('click', () => {
-      paketlerPopup.style.display = 'none';
-  });
-
-// Form gönderildikten sonra bilet butonu
-formIframe.addEventListener('load', () => { 
-   try {
-       const formDoc = formIframe.contentDocument || formIframe.contentWindow.document;
-       const submissionStatus = formDoc.querySelector('.thank-you');
-
-       if (submissionStatus) { 
-           biletAlButonu.style.display = 'block';
-       }
-   } catch (error) {
-       console.error("Form kontrol edilemedi:", error);
-   }
-});
 </script>
-
 
 </body>
 </html>

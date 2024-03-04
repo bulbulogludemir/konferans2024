@@ -75,31 +75,43 @@ body {
     padding: 20px;
   }
 
-  .paketler-popup {
-    display: none; /* Varsayılan olarak gizle */
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: white;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-    z-index: 10; /* Ögelerin üstünde olduğundan emin olun*/
-  }
-  
-  .paket-bilgisi { 
-    /* Paket içeriğinizi şekillendirin */
-  }
-  
-  .popup-kapat {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    font-size: 20px;
+  .paketleri-gor {
+    background-color: #e21111; /* Kırmızı arka plan */
+    color: #fff;              /* Beyaz yazı */
+    border: none;             /* Kenarlığı kaldır */
+    border-radius: 10px;      /* Köşeleri Yuvarlat */
+    padding: 10px 20px;       
     cursor: pointer;
-  }
+    margin-top: 20px;         /* Formdan biraz uzaklaştırın */
+    font-size: 16px;
+    font-weight: bold;
+    display: block;           /* Blok seviyesinde olsun */
+    margin: 20px auto;        /* Ortalamak için */
+    width: 200px;             /* Butonun genişliğini ayarla*/
+}
 
+.paketleri-gor:hover {
+    background-color: #c50e0e; /* Hover etkisi */
+}
+
+.bilet-satin-al {
+    /* "paketleri-gor" ile benzer stil ama farklı renk */
+    background-color: #006838; /* Yeşil arka plan */
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    display: block;          
+    margin: 20px auto;     
+    width: 200px;          
+}
+
+.bilet-satin-al:hover {
+   background-color: #004d29; /* Hover efekti */
+}
 
   footer { 
     background-color: rgb(56, 56, 56);
