@@ -76,7 +76,7 @@ main {
 }
 
 .icerik-bolmesi {
-  background-color: #ffffff;
+  background-color: #dadada;
   margin: 20px auto;
   padding: 20px;
   width: 80%;
@@ -91,6 +91,7 @@ main {
   width: 100%;
   margin-bottom: 15px;
   display: block;
+  border-radius: 25px;
 }
 
 .baslik {
