@@ -30,6 +30,27 @@
     </div>
     <button class="paketleri-gor">Paketleri Gör</button>
     <button class="bilet-satin-al">Bilet Satın Al</button>
+
+    <section class="paket-bolumu" id="paketler">
+      <div class="paket-container">
+          <h2>Paketlerimiz</h2>
+  
+          <div class="paket">
+              <h3>Paket 1</h3>
+              <p>Paket 1 içeriği</p>
+              <span class="fiyat">100 TL</span>
+          </div>
+  
+          <div class="paket">
+              <h3>Paket 2</h3>
+              <p>Paket 2 içeriği</p>
+              <span class="fiyat">150 TL</span>
+          </div>
+  
+          </div>
+  </section>
+
+
  </main>
 
    <footer>
@@ -45,6 +66,17 @@
     biletAlButonu.addEventListener('click', function() {
         window.location.href = 'https://www.antalyaseminer.com'; 
     });
+
+    let paketleriGorButonu = document.querySelector('.paketleri-gor');
+    let paketBolumu = document.getElementById('paketler');
+
+    // Varsayılan olarak paketi gizliyoruz
+    paketBolumu.style.display = 'none';
+
+    paketleriGorButonu.addEventListener('click', function() {
+    paketBolumu.style.display = 'block'; //Paketi görünür yap
+    });
+
   </script>
 
 </body>
