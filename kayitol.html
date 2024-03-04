@@ -1,43 +1,46 @@
 <!DOCTYPE html>
 <html lang="tr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>1923 Cumhuriyet Konferansı | Samsun Atakum Rotaract</title>
-  <link rel="icon" type="image/x-icon" href="./images/favicon.png">
-  <link rel="stylesheet" href="./kayitol.css">
-  <script src="https://kit.fontawesome.com/75a9b9d92e.js" crossorigin="anonymous"></script>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>1923 Cumhuriyet Konferansı | Samsun Atakum Rotaract</title>
+ <link rel="icon" type="image/x-icon" href="./images/favicon.png">
+ <link rel="stylesheet" href="./kayitol.css">
+ <script src="https://kit.fontawesome.com/75a9b9d92e.js" crossorigin="anonymous"></script>
 </head>
 <body>
 
-  <header>
-    <div class="logo">
-      <img src="./images/logo.png">
-      </div>      
-    <nav>
-      <a href="./index.html">Ana Sayfa</a>
-      <a href="./konferans.html">Konferans</a>
-      <a href="./takımlar.html">Takımlar</a>
-      <a href="./otel.html">Otel</a>
-      <a href="./paketler.html">Paketler</a>
-    </nav>
-    <a href="./kayitol.html" class="kayit-ol">KAYIT OLUN</a>
-  </header>
-  <main>
-    <div class="form">
-      <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdgAWA_2r4y7w74C-cmTnFPeKQOgtMQAB5nQumeFuIondn7UA/viewform?embedded=true" width="640" height="1199" frameborder="0" marginheight="0" marginwidth="0">Yükleniyor…</iframe>
-    </div>
-  
+ <header>
+  <div class="logo">
+   <img src="./images/logo.png">
+   </div>
+  <nav>
+   <a href="./index.html">Ana Sayfa</a>
+   <a href="./konferans.html">Konferans</a>
+   <a href="./takımlar.html">Takımlar</a>
+   <a href="./otel.html">Otel</a>
+   <a href="./paketler.html">Paketler</a>
+  </nav>
+  <a href="./kayitol.html" class="kayit-ol">KAYIT OLUN</a>
+ </header>
+ <main>
+  <div class="form-container">
+   <div class="form">
+    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdgAWA_2r4y7w74C-cmTnFPeKQOgtMQAB5nQumeFuIondn7UA/viewform?embedded=true" width="640" height="1199" frameborder="0" marginheight="0" marginwidth="0">Yükleniyor…</iframe>
+   </div>
+   <div class="butonlar">
     <button id="paket-sec" class="paket-sec-butonu">Paket Seçin</button>
     <button id="paketleri-gor" class="paketleri-gor-butonu">Paketleri Gör</button>
-  </main>  
-   <footer>
-    <div class="sosyal-medya">
-      <a href="https://www.instagram.com/konferans35"><i class="fab fa-instagram"></i></a>
-      <a href="mailto:35.konferans@gmail.com"><i class="fa-solid fa-envelope"></i></a>
-    </div>
-    <p class="telif-hakkı">© 2024 Demir Bülbüloğlu - Tüm Hakları Saklıdır.</p>
-  </footer>
+   </div>
+  </div>
+ </main>  
+ <footer>
+  <div class="sosyal-medya">
+   <a href="https://www.instagram.com/konferans35"><i class="fab fa-instagram"></i></a>
+   <a href="mailto:35.konferans@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+  </div>
+  <p class="telif-hakkı">© 2024 Demir Bülbüloğlu - Tüm Hakları Saklıdır.</p>
+ </footer>
 
 <script>
 const form = document.querySelector('.form iframe');
@@ -45,23 +48,23 @@ const paketSecButonu = document.getElementById('paket-sec');
 const paketleriGorButonu = document.getElementById('paketleri-gor');
 
 paketleriGorButonu.addEventListener('click', () => {
-  window.location.href = './paketler.html'; // Paketler sayfasının URL'si
+ window.location.href = './paketler.html'; // Paketler sayfasının URL'si
 });
 
 form.addEventListener('load', () => {
-  // Google Form'un yüklenmesini bekle
-  const iframeDoc = form.contentDocument || form.contentWindow.document;
-  const successMessage = iframeDoc.querySelector(/* Başarı mesajının konumunu bulmak için Google Form'unuzu inceleyin */);
+ // Google Form'un yüklenmesini bekle
+ const iframeDoc = form.contentDocument || form.contentWindow.document;
+ const successMessage = iframeDoc.querySelector(/* Başarı mesajının konumunu bulmak için Google Form'unuzu inceleyin */);
 
-  if (successMessage) {
-    // Form gönderilmişse butonu göster
-    paketSecButonu.style.display = 'block'; 
-  }
+ if (successMessage) {
+  // Form gönderilmişse butonu göster
+  paketSecButonu.style.display = 'block'; 
+ }
 });
 
 // Butona tıklandığında yönlendir
 paketSecButonu.addEventListener('click', () => {
-  window.location.href = 'https://www.antalyaseminer.com/'; // Paket seçim sayfasının URL'si
+ window.location.href = 'https://www.antalyaseminer.com/'; // Paket seçim sayfasının URL'si
 });
 </script>
 
