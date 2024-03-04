@@ -43,30 +43,15 @@
  </footer>
 
 <script>
-const form = document.querySelector('.form iframe');
-const paketSecButonu = document.getElementById('paket-sec');
-const paketleriGorButonu = document.getElementById('paketleri-gor');
+const successMessage = iframeDoc.querySelector('.ss-form-entry-submit-success-message');
 
-paketleriGorButonu.addEventListener('click', () => {
- window.location.href = './paketler.html'; // Paketler sayfasının URL'si
-});
-
-form.addEventListener('load', () => {
- // Google Form'un yüklenmesini bekle
- const iframeDoc = form.contentDocument || form.contentWindow.document;
- const successMessage = iframeDoc.querySelector(/* Başarı mesajının konumunu bulmak için Google Form'unuzu inceleyin */);
-
- if (successMessage) {
-  // Form gönderilmişse butonu göster
-  paketSecButonu.style.display = 'block'; 
- }
-});
-
-// Butona tıklandığında yönlendir
-paketSecButonu.addEventListener('click', () => {
- window.location.href = 'https://www.antalyaseminer.com/'; // Paket seçim sayfasının URL'si
-});
+if (successMessage) {
+  paketSecButonu.style.display = 'block';
+  paketleriGorButonu.style.display = 'block';
+} else {
+  paketSecButonu.style.display = 'none';
+  paketleriGorButonu.style.display = 'none';
+}
 </script>
-
 </body>
 </html>
