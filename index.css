@@ -181,6 +181,9 @@ footer {
 
   .icerik-bolmesi {
     width: 80%;
+    border-style: solid;
+    border-width: 0px;
+    border-color: white;
   }
 }
 
