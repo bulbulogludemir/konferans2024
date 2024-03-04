@@ -19,21 +19,20 @@
    <a href="./konferans.html">Konferans</a>
    <a href="./takımlar.html">Takımlar</a>
    <a href="./otel.html">Otel</a>
-   <a href="./paketler.html">Paketler</a>
+   <a href="#" class="paketler-butonu">Paketler</a>
   </nav>
   <a href="./kayitol.html" class="kayit-ol">KAYIT OLUN</a>
  </header>
  <main>
+
   <div class="form-container">
-   <div class="form">
-    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdgAWA_2r4y7w74C-cmTnFPeKQOgtMQAB5nQumeFuIondn7UA/viewform?embedded=true" width="640" height="1199" frameborder="0" marginheight="0" marginwidth="0">Yükleniyor…</iframe>
-   </div>
-   <div class="butonlar">
-    <button id="paket-sec" class="paket-sec-butonu">Paket Seçin</button>
-    <button id="paketleri-gor" class="paketleri-gor-butonu">Paketleri Gör</button>
-   </div>
+    <div class="form">
+      <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdgAWA_2r4y7w74C-cmTnFPeKQOgtMQAB5nQumeFuIondn7UA/viewform?embedded=true" width="640" height="1199" frameborder="0" marginheight="0" marginwidth="0">Yükleniyor…</iframe>
+    </div>
+    <a href="https://www.antalyaseminer.com" class="bilet-al-butonu" style="display: none;">Bilet Al</a> 
   </div>
- </main>  
+
+ </main>
  <footer>
   <div class="sosyal-medya">
    <a href="https://www.instagram.com/konferans35"><i class="fab fa-instagram"></i></a>
@@ -42,16 +41,37 @@
   <p class="telif-hakkı">© 2024 Demir Bülbüloğlu - Tüm Hakları Saklıdır.</p>
  </footer>
 
-<script>
-const successMessage = iframeDoc.querySelector('.ss-form-entry-submit-success-message');
+ <script>
+  const paketlerButonu = document.querySelector('.paketler-butonu');
+  const paketlerPopup = document.querySelector('.paketler-popup'); 
+  const popupKapat = document.querySelector('.popup-kapat'); 
+  const formIframe = document.querySelector('.form iframe');
+  const biletAlButonu = document.querySelector('.bilet-al-butonu');
 
-if (successMessage) {
-  paketSecButonu.style.display = 'block';
-  paketleriGorButonu.style.display = 'block';
-} else {
-  paketSecButonu.style.display = 'none';
-  paketleriGorButonu.style.display = 'none';
-}
+  // Paketler butonu işlevselliği
+  paketlerButonu.addEventListener('click', () => {
+      paketlerPopup.style.display = 'block'; 
+  });
+
+  popupKapat.addEventListener('click', () => {
+      paketlerPopup.style.display = 'none';
+  });
+
+  // Form gönderildikten sonra bilet butonu
+  formIframe.addEventListener('load', () => { 
+      try {
+          const formDoc = formIframe.contentDocument || formIframe.contentWindow.document;
+          const submissionStatus = formDoc.querySelector(/* Google Formunuzdaki başarı mesajının seçicisini bulun */);
+
+          if (submissionStatus) { 
+              biletAlButonu.style.display = 'block';
+          }
+      } catch (error) {
+          console.error("Form kontrol edilemedi:", error);
+      }
+  });
 </script>
+
+
 </body>
 </html>

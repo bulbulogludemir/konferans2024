@@ -1,7 +1,7 @@
 body {
     font-family: Arial, sans-serif;
     margin: 0;
-    background-image: url('./media/images/bg.jpeg'); 
+    background-color: white;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -75,36 +75,32 @@ body {
     padding: 20px;
   }
 
-  .paket-sec-butonu {
-    background-color: #e21111; /* Kırmızı veya istediğiniz renk */
-    color: #fff;
-    border: none; /* Varsayılan kenarlığı kaldır */
-    padding: 15px 30px;
-    text-decoration: none;
+
+  .paketler-popup {
+    display: none; /* Varsayılan olarak gizle */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    z-index: 10; /* Ögelerin üstünde olduğundan emin olun*/
+  }
+  
+  .paket-bilgisi { 
+    /* Paket içeriğinizi şekillendirin */
+  }
+  
+  .popup-kapat {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
     cursor: pointer;
-    border-radius: 5px;  /* Yuvarlatılmış köşeler */
-    font-size: 16px;
-    margin-top: 15px;
   }
-  
-  .paketleri-gor-butonu {
-    background-color: #e21111; /* Kırmızı veya istediğiniz renk */
-    color: #fff;
-    border: none; /* Varsayılan kenarlığı kaldır */
-    padding: 15px 30px;
-    text-decoration: none;
-    cursor: pointer;
-    border-radius: 5px;  /* Yuvarlatılmış köşeler */
-    font-size: 16px;
-  }
-  
-  .paketleri-gor-butonu:hover {
-      opacity: 0.8; /* Biraz saydamlık ekle */
-  }
-  
-  .paket-sec-butonu:hover {
-      opacity: 0.8; /* Biraz saydamlık ekle */
-  }
+
 
   footer { 
     background-color: rgb(56, 56, 56);
