@@ -203,10 +203,6 @@
       margin-right: 0;
       width: 100%;
     }
-
-    .form iframe {
-        width: 100%; 
-    } 
 } 
 
 @media (max-width: 900px) {
