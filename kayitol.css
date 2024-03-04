@@ -98,12 +98,12 @@
    background-color: #c50e0e;
 }
   
-  .form iframe {
-    border: none;  
-    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2); 
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+.form iframe {
+  border: none;  
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2); 
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .paket-bolumu {
@@ -203,6 +203,10 @@
       margin-right: 0;
       width: 100%;
     }
+
+    .form iframe {
+      width: 100%; 
+  } 
 } 
 
 @media (max-width: 900px) {
