@@ -25,8 +25,8 @@
       <div class="form">
         <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdgAWA_2r4y7w74C-cmTnFPeKQOgtMQAB5nQumeFuIondn7UA/viewform?embedded=true" width="640" height="1120" frameborder="0" marginheight="0" marginwidth="0">Yükleniyor…</iframe>
       </div>
-      <button class="butonlar paketleri-gor" onclick="paketleriGoster()">Paketleri Gör</button>
-    <button class="butonlar odeme-bilgileri">Ödeme Bilgileri</button>
+      <button class="paketleri-gor" onclick="paketleriGoster()">Paketleri Gör</button>
+    <button class="odeme-bilgileri">Ödeme Bilgileri</button>
 
     <section class="paket-bolumu" id="paketler" style="display: none;">
       <div class="paket-container">
@@ -46,7 +46,7 @@
 
           <div class="paket">
             <h3>SÜMER PALACE</h3>
-            <p>3 Kişilik Oda - 3 Gece</p>
+            <p>3 Kişilik Oda - 2 Gece</p>
             <span class="fiyat">Kişi Başı: 7.525₺</span>
         </div>
 
@@ -94,7 +94,7 @@
   </footer>
 
   <script>
-    function paketleriGoster() {
+  function paketleriGoster() {
   document.getElementById("paketler").style.display = "block";
   document.getElementById("bilet-satin-al").style.display = "none";
 }
