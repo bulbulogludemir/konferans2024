@@ -2,42 +2,46 @@
 body {
   font-family: Arial, sans-serif;
   margin: 0;
-  }
-  
-  /* Header */
-  header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Header */
+header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 10px;
   background-color: #000000;
   opacity: 85%;
-  }
-  
-  .logo {
+  width: 100%;
+}
+
+.logo {
   margin-left: 300px; /* İstenilen kenar boşluğu için değerle değiştirin */
-  }
-  
-  .logo img {
+}
+
+.logo img {
   height: 60px;
   width: auto;
-  }
-  
-  nav {
+}
+
+nav {
   display: flex;
-  }
-  
-  nav a {
+}
+
+nav a {
   margin-right: 20px;
   text-decoration: none;
   color: #ffffff;
-  }
-  
-  nav a:hover {
+}
+
+nav a:hover {
   color: #e21111;
-  }
-  
-  .kayit-ol {
+}
+
+.kayit-ol {
   background-color: transparent;
   border: 3px solid #e21111;
   color: #e21111;
@@ -46,52 +50,63 @@ body {
   cursor: pointer;
   font-size: 16px;
   font-weight: bold;
-  }
-  
-  .kayit-ol:hover {
+}
+
+.kayit-ol:hover {
   background-color: #e21111;
   color: #fff;
-  }
-  
-  /* Ana Bölüm */
-  main {
-  padding: 20px;
-  }
-  
-  /* Form */
-  .form-bölümü {
-    width: 640px; /* Formun genişliği (isteğinize göre ayarlayın)*/
-    margin: 0 auto;  /* Yatay olarak ortala */
-    text-align: center; /* Form içindeki elementleri ortala */
-  }
+}
 
-  .form iframe {
+/* Ana Bölüm */
+main {
+  padding: 20px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Form */
+.form-bölümü {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form-container {
+  width: 95%;
+}
+
+.form-container iframe {
   border: none;
   box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
   display: block;
   margin-left: auto;
   margin-right: auto;
-  }
+  width: 100%;
+}
 
-  /* Paketler Bölümü CSS'si*/
+/* Paketler Bölümü CSS'si*/
 .paketler-bolumu {
   display: none; /* Başlangıçta gizli olsun */
   padding: 20px;
-  background-color: #f0f0f0;  
-  border: 1px solid #ddd; 
+  background-color: #f0f0f0;
+  border: 1px solid #ddd;
   margin-top: 20px;
 }
 
 .paket {
   margin-bottom: 15px;
-  border: 1px solid #ddd; 
+  border: 1px solid #ddd;
   padding: 10px;
 }
 
 /* Buton Tasarımı */
 .buttons-container {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 20px; /* Butonlar ile içerik arasında boşluk */
 }
 
 .paketler-buton {
@@ -103,7 +118,6 @@ body {
   cursor: pointer;
   font-size: 16px;
   font-weight: bold;
-  margin-bottom: 20px; /* Buton ile paketler arasına boşluk */
 }
 
 .odeme-bilgileri-buton {
@@ -115,7 +129,6 @@ body {
   cursor: pointer;
   font-size: 16px;
   font-weight: bold;
-  margin-bottom: 20px; /* Buton ile paketler arasına boşluk */
 }
 
 .paketler-buton:hover {
@@ -128,26 +141,28 @@ body {
   color: #fff;
 }
 
+CSS'in Tam Hali (Devamı)
+CSS
 /* Modal (Pop-up) */
 .modal {
-  display: none; 
-  position: fixed; 
-  z-index: 1; 
+  display: none;
+  position: fixed;
+  z-index: 1;
   left: 0;
   top: 0;
-  width: 100%; 
-  height: 100%; 
-  overflow: auto; 
-  background-color: rgba(0,0,0,0.4); 
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
 }
 
 .modal-icerik {
   background-color: #fff;
-  margin: 15% auto; 
+  margin: 15% auto;
   padding: 20px;
   border: 1px solid #888;
-  width: 60%; 
-  max-width: 500px; 
+  width: 60%;
+  max-width: 500px;
 }
 
 .kapat {
@@ -163,109 +178,113 @@ body {
   text-decoration: none;
   cursor: pointer;
 }
-  
-  /* Footer */
-  footer {
+
+/* Footer */
+footer {
   background-color: rgb(56, 56, 56);
   color: white;
   padding: 20px;
   text-align: center;
-  }
-  
-  .sosyal-medya {
+}
+
+.sosyal-medya {
   display: flex;
   justify-content: center;
   margin-bottom: 10px;
-  }
-  
-  .sosyal-medya a {
+}
+
+.sosyal-medya a {
   margin: 0 10px;
   color: white;
   font-size: 24px;
   transition: 0.3s;
-  }
-  
-  .sosyal-medya a:hover {
+}
+
+.sosyal-medya a:hover {
   color: #e21111;
-  }
-  
-  .telif-hakkı {
+}
+
+.telif-hakkı {
   margin: 0;
-  }
-  
-  /* Medya Sorguları */
-  @media (max-width: 900px) {
+}
+
+/* Medya Sorguları */
+@media (max-width: 900px) {
   .logo {
-  margin-left: 20px;
+    margin-left: 20px;
   }
-  
+
   nav a {
-  margin-right: 10px;
+    margin-right: 10px;
   }
-  
+
   .kayit-ol {
-  margin-right: 20px;
-  font-size: 14px;
+    margin-right: 20px;
+    font-size: 14px;
   }
-  }
-  
-  @media (max-width: 600px) {
+}
+
+@media (max-width: 600px) {
   header {
-  flex-direction: column;
-  align-items: flex-start;
+    flex-direction: column;
+    align-items: flex-start;
   }
-  
+
   .logo {
-  margin-left: 20px;
-  margin-bottom: 15px;
+    margin-left: 20px;
+    margin-bottom: 15px;
   }
-  
+
   nav a {
-  margin-bottom: 10px;
+    margin-bottom: 10px;
   }
-  
+
   .kayit-ol {
-  margin-right: 0;
-  width: 100%;
+    margin-right: 0;
+    width: 100%;
   }
-  
-  .form iframe {
-  width: 100%;
+
+  .form-container iframe {
+    width: 100%;
   }
-  }
-  
-  @media (min-width: 768px) {
+}
+
+@media (min-width: 768px) {
   .logo {
-  margin-left: 200px;
+    margin-left: 200px;
   }
-  
+
   nav a {
-  font-size: 20px;
+    font-size: 20px;
   }
-  }
-  
-  @media (max-width: 767px) {
+}
+
+@media (max-width: 767px) {
   header {
-  flex-direction: column;
-  align-items: center;
+    flex-direction: column;
+    align-items: center;
   }
-  
+
   .logo {
-  margin-left: 20px;
+    margin-left: 20px;
   }
-  
+
   nav {
-  margin-top: 10px;
+    margin-top: 10px;
   }
-  
+
   .kayit-ol {
-  margin-right: 75px;
-  align-items: center;
-  padding: 10px 0;
-  margin-left: 75px;
+    margin-right: 75px;
+    align-items: center;
+    padding: 10px 0;
+    margin-left: 75px;
   }
 
   .form-bölümü {
     width: 95%; /* Mobil ekranlar için tam genişlik */
   }
+
+  .buttons-container {
+    flex-direction: column; /* Butonları alt alta sıralayın */
   }
+}
