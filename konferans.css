@@ -65,13 +65,10 @@ body {
     margin-bottom: 20px;
   }
 
-  .video-container {
-    margin: 20px auto;
-    width: 80%;
-  }
-  
-  video {
-    object-fit: cover;
+  .video-container { 
+    margin: 20px auto; /* Üst-alt boşluk, yanlar otomatik */
+    width: 80%;           /* Videonun genişliğini belirleyin */
+    text-align: center;    /* İçerikleri merkeze hizalama */
   }
 
   .ekip {
