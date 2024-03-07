@@ -1,127 +1,80 @@
-  body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-  }
-  
-  header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px;
-    background-color: #000000;
-    opacity: 85%;
-  }
-  
-  .logo {
-    margin-left: 300px;
-    margin-right: 20px;
-  }
-  
-  .logo img {
-    height: 60px;
-    width: auto;
-  }
-  
-  nav {
-    display: flex;
-    margin-right: 20px;
-  }
-  
-  nav a {
-    margin-right: 20px;
-    text-decoration: none;
-    color: #ffffff;
-  }
-  
-  nav a:hover {
-    color: #e21111;
-  }
-  
-  .kayit-ol {
-    background-color: transparent;
-    border: 3px solid #e21111;
-    color: #e21111;
-    border-radius: 10px;
-    padding: 10px 20px;
-    cursor: pointer;
-    font-size: 16px;
-    font-weight: bold;
-    display: flex;
-    justify-content: center;
-    text-decoration: none;
-  }
-  
-  .kayit-ol:hover {
-    background-color: #e21111;
-    color: #fff;
-  }
-  
-  
-  main {
-    padding: 20px;
-  }
-
-  .paketleri-gor {
-    background-color: #e21111; /* Kırmızı arka plan */
-    color: #fff;              /* Beyaz yazı */
-    border: none;             /* Kenarlığı kaldır */
-    border-radius: 10px;      /* Köşeleri Yuvarlat */
-    padding: 10px 20px;       
-    cursor: pointer;
-    margin-top: 20px;         /* Formdan biraz uzaklaştırın */
-    font-size: 16px;
-    font-weight: bold;
-    display: block;           /* Blok seviyesinde olsun */
-    margin: 20px auto;        /* Ortalamak için */
-    width: 200px;             /* Butonun genişliğini ayarla*/
+/* Temel Ayarlar */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
 }
 
-.paketleri-gor:hover {
-    background-color: #c50e0e; /* Hover etkisi */
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #000000;
+  opacity: 85%;
 }
 
-.bilet-satin-al {
-    background-color: #e21111;
-    color: #fff;
-    border: none;
-    border-radius: 10px;
-    padding: 10px 20px;
-    cursor: pointer;
-    font-size: 16px;
-    font-weight: bold;
-    display: block;          
-    margin: 20px auto;     
-    width: 200px;          
+.logo {
+  margin-left: 300px; /* İstenilen kenar boşluğu için değerle değiştirin */
 }
 
-.bilet-satin-al:hover {
-   background-color: #c50e0e;
-}
-  
-.form iframe {
-  border: none;  
-  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2); 
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+.logo img {
+  height: 60px;
+  width: auto;
 }
 
+nav {
+  display: flex;
+}
+
+nav a {
+  margin-right: 20px;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+nav a:hover {
+  color: #e21111;
+}
+
+.kayit-ol {
+  background-color: transparent;
+  border: 3px solid #e21111;
+  color: #e21111;
+  border-radius: 10px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.kayit-ol:hover {
+  background-color: #e21111;
+  color: #fff;
+}
+
+/* Ana Bölüm */
+main {
+  padding: 20px;
+}
+
+/* Paketler Bölümü Stilleri */
 .paket-bolumu {
   background-color: #fff;
   padding: 20px;
-  margin: 20px 0; 
+  margin: 20px 0;
   text-align: center;
-  border-radius: 10px; 
-  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2); 
+  border-radius: 10px;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
 }
 
-.paket-bolumu h2 { 
-  color: #e21111; 
+.paket-bolumu h2 {
+  color: #e21111;
   margin-top: 0;
 }
 
 .paket {
-  border: 1px solid #ddd; 
+  border: 1px solid #ddd;
   padding: 15px;
   margin-bottom: 15px;
 }
@@ -135,24 +88,55 @@
   font-weight: bold;
 }
 
+/* Buton Stilleri */
+.paketleri-gor,
+.bilet-satin-al { 
+  background-color: #e21111; /* Kırmızı arka plan */
+  color: #fff; 
+  border: none;
+  border-radius: 10px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  display: block;
+  margin: 20px auto;
+  width: 200px;
+}
+
+.paketleri-gor:hover,
+.bilet-satin-al:hover {
+  background-color: #c50e0e;
+}
+
+/* Form */
+.form iframe {
+  border: none;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Modal Stilleri */
 .modal {
-  display: none;        /* Varsayılan olarak gizli */
-  position: fixed;      /* Ekranda sabit kalın */
-  z-index: 1;           /* Diğer elementlerin üstünde */
+  display: none; /* Varsayılan olarak gizli */
+  position: fixed; /* Ekranda sabit kalın */
+  z-index: 1; /* Diğer elementlerin üstünde */
   left: 0;
   top: 0;
-  width: 100%;          /* Tam ekran genişliği */
-  height: 100%;         /* Tam ekran yüksekliği */
-  overflow: auto;       /* Gerekirse kaydırma çubuğu ekle */
+  width: 100%; /* Tam ekran genişliği */
+  height: 100%; /* Tam ekran yüksekliği */
+  overflow: auto; /* Gerekirse kaydırma çubuğu ekle */
   background-color: rgba(0, 0, 0, 0.5); /* Yarı saydam siyah arkaplan */
 }
 
 .modal-content {
   background-color: #fff;
-  margin: 15% auto;         /* Üst ve altta %15, yanlarda oto */
+  margin: 15% auto; /* Üst ve altta %15, yanlarda oto */
   padding: 20px;
   border: 1px solid #888;
-  width: 30%;               /* Genişlik ayarı */
+  width: 30%; /* Genişlik ayarı */
   border-radius: 10px; 
   box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2); 
 }
@@ -170,81 +154,37 @@
   text-decoration: none;
   cursor: pointer;
 }
-  
-  footer {
-    background-color: #ccc;
-    padding: 10px;
-    text-align: center;
-  }
 
-  footer {
-    background-color: rgb(56, 56, 56);
-    color: white;
-    padding: 20px;
-    text-align: center;
-  }
-  
-  .sosyal-medya {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 10px;
-  }
-  
-  .sosyal-medya a {
-    margin: 0 10px;
-    color: white;
-    font-size: 24px;
-    transition: 0.3s;
-  }
-  
-  .sosyal-medya a:hover {
-    color: #e21111;
-  }
-  
-  .telif-hakkı {
-    margin: 0;
-  }
-  
-  @media (max-width: 900px) { 
-    .logo {
-        margin-left: 20px; 
-    }
-
-    nav a {
-        margin-right: 10px; 
-    }
-
-    .kayit-ol {
-      margin-right: 20px;
-      font-size: 14px; 
-    }  
+/* Footer */
+footer {
+  background-color: rgb(56, 56, 56);
+  color: white;
+  padding: 20px;
+  text-align: center;
 }
 
-@media (max-width: 600px) {
-    header {
-        flex-direction: column; 
-        align-items: flex-start;
-    }
+.sosyal-medya {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
 
-    .logo {
-        margin-left: 20px; 
-        margin-bottom: 15px; 
-    }
+.sosyal-medya a {
+  margin: 0 10px;
+  color: white;
+  font-size: 24px;
+  transition: 0.3s;
+}
 
-    nav a {
-        margin-bottom: 10px; 
-    }
+.sosyal-medya a:hover {
+  color: #e21111;
+}
 
-    .kayit-ol {
-      margin-right: 0;
-      width: 100%;
-    }
+.telif-hakkı {
+  margin: 0;
+}
 
-    .form iframe {
-      width: 100%; 
-  } 
-} 
-
+/* Medya Sorguları */
 @media (max-width: 900px) {
   .logo {
     margin-left: 20px;
@@ -256,23 +196,23 @@
 
   .kayit-ol {
     margin-right: 20px;
-    font-size: 14px; 
-  }   
+    font-size: 14px;
+  }
 }
 
 @media (max-width: 600px) {
   header {
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
   }
 
   .logo {
-    margin-left: 20px; 
+    margin-left: 20px;
     margin-bottom: 15px;
   }
 
   nav a {
-    margin-bottom: 10px; 
+    margin-bottom: 10px;
   }
 
   .kayit-ol {
@@ -280,10 +220,10 @@
     width: 100%;
   }
 
-  .icerik-bolmesi {
-    width: 80%; 
+  .form iframe {
+    width: 100%;
   }
-} 
+}
 
 @media (min-width: 768px) {
   .logo {
@@ -291,13 +231,13 @@
   }
 
   nav a {
-    font-size: 20px; 
+    font-size: 20px;
   }
 }
 
 @media (max-width: 767px) {
   header {
-    flex-direction: column; 
+    flex-direction: column;
     align-items: center;
   }
 
@@ -306,7 +246,7 @@
   }
 
   nav {
-    margin-top: 10px; 
+    margin-top: 10px;
   }
 
   .kayit-ol {
