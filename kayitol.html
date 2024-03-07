@@ -26,29 +26,65 @@
         <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdgAWA_2r4y7w74C-cmTnFPeKQOgtMQAB5nQumeFuIondn7UA/viewform?embedded=true" width="640" height="1120" frameborder="0" marginheight="0" marginwidth="0">Yükleniyor…</iframe>
       </div>
     <button class="paketleri-gor">Paketleri Gör</button>
-    <button class="bilet-satin-al">Bilet Satın Al</button>
+    <button class="odeme-bilgileri">Ödeme Bilgileri</button>
 
     <section class="paket-bolumu" id="paketler">
       <div class="paket-container">
           <h2>Paketlerimiz</h2>
   
           <div class="paket">
-              <h3>Paket 1</h3>
-              <p>Paket 1 içeriği</p>
-              <span class="fiyat">100 TL</span>
+              <h3>ANKARA PALACE</h3>
+              <p>1 Kişilik Oda - 2 Gece</p>
+              <span class="fiyat">Kişi Başı 11.165₺</span>
           </div>
-  
+
           <div class="paket">
-              <h3>Paket 2</h3>
-              <p>Paket 2 içeriği</p>
-              <span class="fiyat">150 TL</span>
-          </div>
-  
-          </div>
+            <h3>PERA PALACE</h3>
+            <p>2 Kişilik Oda - 2 Gece</p>
+            <span class="fiyat">Kişi Başı 7.805₺</span>
+        </div>
+
+        <div class="paket">
+          <h3>SÜMER PALACE</h3>
+          <p>3 Kişilik Oda - 3 Gece</p>
+          <span class="fiyat">Kişi Başı 7.525₺</span>
+      </div>
+
+      <div class="paket">
+        <h3>BANDIRMA</h3>
+        <p>2 Kişilik Oda - 1 Gece</p>
+        <span class="fiyat">Kişi Başı 5.005₺</span>
+    </div>
+
+    <div class="paket">
+      <h3>BEYOĞLU</h3>
+      <p>1 Kişilik Oda - 1 Gece</p>
+      <span class="fiyat">Kişi Başı 6.685₺</span>
+  </div>
+
+  <div class="paket">
+    <h3>DOLMABAHÇE</h3>
+    <p>3 Kişilik Oda - 1 Gece</p>
+    <span class="fiyat">Kişi Başı 4.865₺</span>
+</div>
+
+</div>
   </section>
-
-
  </main>
+
+ <div id="odemeModal" class="modal"> 
+  <div class="modal-content">
+      <span class="close-button">&times;</span>
+      <h2>Ödeme Bilgileri</h2>
+      <p>Lütfen ödemeyi aşağıdaki hesaba yapın:</p>
+      <div>
+          <b>Banka Adı:</b> Garanti Bankası <br>
+          <b>Hesap Sahibi:</b> Samsun Atakum Rotaract <br>
+          <b>IBAN:</b> TR00 0000 0000 0000 0000 0000 01 <br> 
+          <b>Açıklama:</b> K12345 (Konferans Kaydı) 
+      </div>
+  </div>
+</div>
 
    <footer>
     <div class="sosyal-medya">
@@ -73,6 +109,24 @@
     paketleriGorButonu.addEventListener('click', function() {
     paketBolumu.style.display = 'block'; //Paketi görünür yap
     });
+
+    let odemeModal = document.getElementById('odemeModal');
+let odemeBilgileriButonu = document.querySelector('.odeme-bilgileri');
+let closeButton = document.querySelector('.close-button');
+
+odemeBilgileriButonu.addEventListener('click', function() {
+    odemeModal.style.display = 'block';
+});
+
+closeButton.addEventListener('click', function() {
+    odemeModal.style.display = 'none';
+});
+
+window.onclick = function(event) {
+    if (event.target == odemeModal) {
+        odemeModal.style.display = 'none';
+    }
+}
 
   </script>
 

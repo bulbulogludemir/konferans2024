@@ -80,7 +80,7 @@ main {
   background-color: #c50e0e; /* Hover etkisi */
 }
 
-.bilet-satin-al {
+.odeme-bilgileri {
   background-color: #e21111;
   color: #fff;
   border: none;
@@ -94,7 +94,7 @@ main {
   width: 200px;          
 }
 
-.bilet-satin-al:hover {
+.odeme-bilgileri:hover {
  background-color: #c50e0e;
 }
 
@@ -133,6 +133,40 @@ color: #333;
 .fiyat {
 color: #e21111;
 font-weight: bold;
+}
+
+.modal {
+  display: none; /* Varsayılan olarak gizli */
+  position: fixed; /* Sayfada sabit kalın */
+  z-index: 1; /* En üstte */
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto; /* İçerik gerektiğinde kaydırılabilir hale getirin*/
+  background-color: rgba(0, 0, 0, 0.4); /* Yarı saydam siyah arka plan */
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* %15 üstten/alttan, otomatik merkezleme */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 40%; /* İstenilen genişliğe ayarlanabilir */
+}
+
+.close-button {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close-button:hover,
+.close-button:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 footer {
