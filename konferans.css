@@ -66,9 +66,9 @@ body {
   }
 
   .video-container { 
-    margin: 20px auto; /* Üst-alt boşluk, yanlar otomatik */
-    width: 80%;           /* Videonun genişliğini belirleyin */
-    text-align: center;    /* İçerikleri merkeze hizalama */
+    margin: 20px auto;
+    width: 80%;
+    text-align: center;
   }
 
   .ekip {
