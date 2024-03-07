@@ -25,65 +25,83 @@
       <div class="form">
         <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdgAWA_2r4y7w74C-cmTnFPeKQOgtMQAB5nQumeFuIondn7UA/viewform?embedded=true" width="640" height="1120" frameborder="0" marginheight="0" marginwidth="0">Yükleniyor…</iframe>
       </div>
-      <button class="paketleri-gor" onclick="paketleriGoster()">Paketleri Gör</button>
-    <button class="odeme-bilgileri">Ödeme Bilgileri</button>
-
-    <section class="paket-bolumu" id="paketler" style="display: none;">
-      <div class="paket-container">
-          <h2>Paketlerimiz</h2>
   
-          <div class="paket">
-              <h3>ANKARA PALACE</h3>
-              <p>1 Kişilik Oda - 2 Gece</p>
-              <span class="fiyat">Kişi Başı: 11.165₺</span>
-          </div>
-  
-          <div class="paket">
-              <h3>PERA PALACE</h3>
-              <p>2 Kişilik Oda - 2 Gece</p>
-              <span class="fiyat">Kişi Başı: 7.805₺</span>
-          </div>
-
-          <div class="paket">
-            <h3>SÜMER PALACE</h3>
-            <p>3 Kişilik Oda - 2 Gece</p>
-            <span class="fiyat">Kişi Başı: 7.525₺</span>
-        </div>
-
+      <button class="paketler-buton">Paketleri Gör</button>
+      <div id="paketler-acilir" class="paketler-bolumu">
         <div class="paket">
-          <h3>BANDIRMA</h3>
-          <p>2 Kişilik Oda - 1 Gece</p>
-          <span class="fiyat">Kişi Başı: 5.005₺</span>
+          <h3>ANKARA PALACE</h3>
+          <p>1 Kişilik Oda - 2 Gece</p>
+          <span class="fiyat">Kişi Başı: 11.165₺</span>
       </div>
 
       <div class="paket">
-        <h3>BEYOĞLU</h3>
-        <p>1 Kişilik Oda - 1 Gece</p>
-        <span class="fiyat">Kişi Başı: 6.685₺</span>
+          <h3>PERA PALACE</h3>
+          <p>2 Kişilik Oda - 2 Gece</p>
+          <span class="fiyat">Kişi Başı: 7.805₺</span>
+      </div>
+
+      <div class="paket">
+        <h3>SÜMER PALACE</h3>
+        <p>3 Kişilik Oda - 2 Gece</p>
+        <span class="fiyat">Kişi Başı: 7.525₺</span>
     </div>
 
     <div class="paket">
-      <h3>DOLMABAHÇE</h3>
-      <p>3 Kişilik Oda - 1 Gece</p>
-      <span class="fiyat">Kişi Başı: 4.865₺</span>
-  </div>
-  
-  </div>
-  </section>
-
-  <div id="odemeModal" class="modal">
-    <div class="modal-content">
-      <span class="close-button">&times;</span>
-      <h2>Ödeme Bilgileri</h2>
-     <p><strong>Banka Adı:</strong> Garanti Bankası</p>
-      <p><strong>Hesap Adı:</strong> Samsun Atakum Rotaract</p>
-      <p><strong>IBAN:</strong> TR65 0006 2000 1234 0000 6666 23</p>
-      <p><strong>Açıklama:</strong> 1923konferansı - ADINIZ SOYADINIZ</p>
-    </div>
+      <h3>BANDIRMA</h3>
+      <p>2 Kişilik Oda - 1 Gece</p>
+      <span class="fiyat">Kişi Başı: 5.005₺</span>
   </div>
 
+  <div class="paket">
+    <h3>BEYOĞLU</h3>
+    <p>1 Kişilik Oda - 1 Gece</p>
+    <span class="fiyat">Kişi Başı: 6.685₺</span>
+</div>
 
+<div class="paket">
+  <h3>DOLMABAHÇE</h3>
+  <p>3 Kişilik Oda - 1 Gece</p>
+  <span class="fiyat">Kişi Başı: 4.865₺</span>
+</div>
+        </div>
+
+        <button class="odeme-bilgileri-buton">Ödeme Bilgileri</button>
+        <div id="odeme-bilgileri" class="modal">
+          <div class="modal-icerik">
+            <span class="kapat">&times;</span>
+            <h2>Ödeme Bilgileri</h2>
+            <p>Banka Adı: ...</p>
+            <p>Hesap Adı: ...</p>
+            <p>IBAN: ...</p>
+            <p>Açıklama: ...</p>
+          </div>
+        </div>
  </main>
+
+ <script>
+  const paketlerButon = document.querySelector(".paketler-buton");
+  const paketlerAcilir = document.getElementById("paketler-acilir");
+
+  paketlerButon.addEventListener("click", () => {
+    if (paketlerAcilir.style.display === "none") {
+      paketlerAcilir.style.display = "block";
+    } else {
+      paketlerAcilir.style.display = "none";
+    }
+  });
+
+const odemeButon = document.querySelector(".odeme-bilgileri-buton");
+const odemePopup = document.getElementById("odeme-bilgileri");
+const kapatButonu = document.querySelector(".kapat"); 
+
+odemeButon.addEventListener("click", () => {
+odemePopup.style.display = "block";
+});
+
+kapatButonu.addEventListener("click", () => {
+odemePopup.style.display = "none";
+});
+</script>
 
    <footer>
     <div class="sosyal-medya">
@@ -92,41 +110,6 @@
     </div>
     <p class="telif-hakkı">© 2024 Demir Bülbüloğlu - Tüm Hakları Saklıdır.</p>
   </footer>
-
-  <script>
-  function paketleriGoster() {
-  document.getElementById("paketler").style.display = "block";
-  document.getElementById("bilet-satin-al").style.display = "none";
-}
-    // "butonlar" isimli bir sınıf oluşturarak her iki butonu da seçer.
-    let butonlar = document.querySelectorAll('.butonlar');
-    let paketBolumu = document.getElementById('paketler');
-    let odemeModali = document.getElementById('odemeModal');
-    let closeButton = document.querySelector('.close-button');
-
-    // Paketleri Gör ve Ödeme Bilgileri butonlarına tıklama olaylarını ekler.
-    butonlar.forEach((buton) => {
-        buton.addEventListener('click', function() {
-            if (buton.classList.contains('paketleri-gor')) {
-                paketBolumu.style.display = 'block';
-              } else if (buton.classList.contains('odeme-bilgileri')) {
-                odemeModali.style.display = 'block';
-              }
-          });
-    });
-
-    // Kapat butonuna tıklandığında modalı gizler.
-    closeButton.addEventListener('click', function() {
-      odemeModali.style.display = 'none';
-    });
-
-    // Modalın dışında bir yere tıklandığında da kapanacaktır.
-    window.onclick = function(event) {
-      if (event.target == odemeModali) {
-          odemeModali.style.display = 'none';
-      }
-    };
-  </script>
 
 </body>
 </html>
