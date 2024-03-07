@@ -95,7 +95,7 @@ body {
   margin-bottom: 20px; /* Buton ile paketler arasına boşluk */
 }
 
-odeme-bilgileri-buton {
+.odeme-bilgileri-buton {
   background-color: transparent;
   border: 3px solid #e21111;
   color: #e21111;
