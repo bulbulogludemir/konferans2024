@@ -25,10 +25,10 @@
       <div class="form">
         <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdgAWA_2r4y7w74C-cmTnFPeKQOgtMQAB5nQumeFuIondn7UA/viewform?embedded=true" width="640" height="1120" frameborder="0" marginheight="0" marginwidth="0">Yükleniyor…</iframe>
       </div>
-    <button class="butonlar paketleri-gor">Paketleri Gör</button>
-        <button class="butonlar odeme-bilgileri">Ödeme Bilgileri</button>
+      <button class="butonlar paketleri-gor" onclick="paketleriGoster()">Paketleri Gör</button>
+    <button class="butonlar odeme-bilgileri">Ödeme Bilgileri</button>
 
-    <section class="paket-bolumu" id="paketler">
+    <section class="paket-bolumu" id="paketler" style="display: none;">
       <div class="paket-container">
           <h2>Paketlerimiz</h2>
   
@@ -68,7 +68,7 @@
       <span class="fiyat">Kişi Başı: 4.865₺</span>
   </div>
   
-          </div>
+  </div>
   </section>
 
   <div id="odemeModal" class="modal">
@@ -94,6 +94,10 @@
   </footer>
 
   <script>
+    function paketleriGoster() {
+  document.getElementById("paketler").style.display = "block";
+  document.getElementById("bilet-satin-al").style.display = "none";
+}
     // "butonlar" isimli bir sınıf oluşturarak her iki butonu da seçer.
     let butonlar = document.querySelectorAll('.butonlar');
     let paketBolumu = document.getElementById('paketler');
