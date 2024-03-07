@@ -90,7 +90,7 @@ body {
 
 /* Buton Tasarımı */
 .buttons-container {
-  text-align: center;
+  align-items: center;
 }
 
 .paketler-buton {
