@@ -12,7 +12,7 @@
   <header>
     <div class="logo">
       <img src="./images/logo.png">
-    </div>
+      </div>      
     <nav>
       <a href="./index.html">Ana Sayfa</a>
       <a href="./konferans.html">Konferans</a>
@@ -21,74 +21,36 @@
     </nav>
     <a href="./kayitol.html" class="kayit-ol">KAYIT OLUN</a>
   </header>
-
   <main>
-
-    <section class="form-bölümü">
-      <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdgAWA_2r4y7w74C-cmTnFPeKQOgtMQAB5nQumeFuIondn7UA/viewform?embedded=true" width="640" height="1120" frameborder="0" marginheight="0" marginwidth="0">Yükleniyor…</iframe>
-    </section>
-
-    <div class="buttons-container">
-      <section class="paketler-bölümü">
-        <button class="paketler-buton">Paketleri Gör</button>
+      <div class="form">
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdgAWA_2r4y7w74C-cmTnFPeKQOgtMQAB5nQumeFuIondn7UA/viewform?embedded=true" width="640" height="1120" frameborder="0" marginheight="0" marginwidth="0">Yükleniyor…</iframe>
       </div>
+    <button class="paketleri-gor">Paketleri Gör</button>
+    <button class="bilet-satin-al">Bilet Satın Al</button>
 
-      <div id="paketler-acilir" style="display: none;">
-        <div class="paket">
-          <h3>ANKARA PALACE</h3>
-          <p>1 Kişilik Oda - 2 Gece</p>
-          <span class="fiyat">Kişi Başı: 11.165₺</span>
-        </div>
-
-        <div class="paket">
-          <h3>PERA PALACE</h3>
-          <p>2 Kişilik Oda - 2 Gece</p>
-          <span class="fiyat">Kişi Başı: 7.805₺</span>
-        </div>
-
-        <div class="paket">
-          <h3>SÜMER PALACE</h3>
-          <p>3 Kişilik Oda - 2 Gece</p>
-          <span class="fiyat">Kişi Başı: 7.525₺</span>
-        </div>
-
-        <div class="paket">
-          <h3>BANDIRMA</h3>
-          <p>2 Kişilik Oda - 1 Gece</p>
-          <span class="fiyat">Kişi Başı: 5.005₺</span>
-        </div>
-
-        <div class="paket">
-          <h3>BEYOĞLU</h3>
-          <p>1 Kişilik Oda - 1 Gece</p>
-          <span class="fiyat">Kişi Başı: 6.685₺</span>
-        </div>
-
-        <div class="paket">
-          <h3>DOLMABAHÇE</h3>
-          <p>3 Kişilik Oda - 1 Gece</p>
-          <span class="fiyat">Kişi Başı: 4.865₺</span>
-        </div>
-      </div>
-    </section>
-
-    <section class="odeme-bilgileri-bölümü">
-      <button class="odeme-bilgileri-buton">Ödeme Bilgileri</button>
-
-      <div id="odeme-bilgileri" style="display: none;">
-        <div class="modal-icerik">
-          <span class="kapat">&times;</span>
-          <h2>Ödeme Bilgileri</h2>
-          <p>Banka Adı: AKBANK</p>
-          <p>Hesap Adı: Atakum Rotaract Kulübü Derneği</p>
-          <p>IBAN: TR28 0004 6006 2188 8000 1786 88</p>
-          <p>Açıklama: Kulüp Adı-BAĞIŞ</p>
-        </div>
-      </div>
-    </section>
-  </main>
+    <section class="paket-bolumu" id="paketler">
+      <div class="paket-container">
+          <h2>Paketlerimiz</h2>
   
-  <footer>
+          <div class="paket">
+              <h3>Paket 1</h3>
+              <p>Paket 1 içeriği</p>
+              <span class="fiyat">100 TL</span>
+          </div>
+  
+          <div class="paket">
+              <h3>Paket 2</h3>
+              <p>Paket 2 içeriği</p>
+              <span class="fiyat">150 TL</span>
+          </div>
+  
+          </div>
+  </section>
+
+
+ </main>
+
+   <footer>
     <div class="sosyal-medya">
       <a href="https://www.instagram.com/konferans35"><i class="fab fa-instagram"></i></a>
       <a href="mailto:35.konferans@gmail.com"><i class="fa-solid fa-envelope"></i></a>
@@ -97,28 +59,22 @@
   </footer>
 
   <script>
-    const paketlerButon = document.querySelector(".paketler-buton");
-    const paketlerAcilir = document.getElementById("paketler-acilir");
-
-    paketlerButon.addEventListener("click", () => {
-      if (paketlerAcilir.style.display === "none") {
-        paketlerAcilir.style.display = "block";
-      } else {
-        paketlerAcilir.style.display = "none";
-      }
+    let biletAlButonu = document.querySelector('.bilet-satin-al');
+    biletAlButonu.addEventListener('click', function() {
+        window.location.href = 'https://www.antalyaseminer.com'; 
     });
 
-    const odemeButon = document.querySelector(".odeme-bilgileri-buton");
-    const odemePopup = document.getElementById("odeme-bilgileri");
-    const kapatButonu = document.querySelector(".kapat");
+    let paketleriGorButonu = document.querySelector('.paketleri-gor');
+    let paketBolumu = document.getElementById('paketler');
 
-    odemeButon.addEventListener("click", () => {
-      odemePopup.style.display = "block";
+    // Varsayılan olarak paketi gizliyoruz
+    paketBolumu.style.display = 'none';
+
+    paketleriGorButonu.addEventListener('click', function() {
+    paketBolumu.style.display = 'block'; //Paketi görünür yap
     });
 
-    kapatButonu.addEventListener("click", () => {
-      odemePopup.style.display = "none";
-    });
   </script>
+
 </body>
 </html>
