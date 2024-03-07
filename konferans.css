@@ -84,8 +84,18 @@ body {
     left: 0;
     width: 100%;
     height: 100%; 
-  }  
+  }
   
+  @media only screen and (max-width: 768px) {
+    .video-container {
+      width: 100%;
+    }
+  
+    .video-wrapper {
+      padding-bottom: 75%;
+    }
+  }
+    
   .ekip {
     background-color: #f7f7f7;
     padding: 50px;
