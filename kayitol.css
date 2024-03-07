@@ -60,72 +60,6 @@ main {
   padding: 20px;
 }
 
-.paketleri-gor {
-  background-color: #e21111; /* Kırmızı arka plan */
-  color: #fff;              /* Beyaz yazı */
-  border: none;             /* Kenarlığı kaldır */
-  border-radius: 10px;      /* Köşeleri Yuvarlat */
-  padding: 10px 20px;       
-  cursor: pointer;
-  margin-top: 20px;         /* Formdan biraz uzaklaştırın */
-  font-size: 16px;
-  font-weight: bold;
-  display: block;           /* Blok seviyesinde olsun */
-  margin: 20px auto;     
-  width: 200px;             /* Butonun genişliğini ayarla*/
-}
-
-.paketleri-gor:hover {
-  background-color: #c50e0e; /* Hover etkisi */
-}
-
-.paket-bolumu {
-  background-color: #fff;
-  padding: 20px;
-  margin: 20px 0; 
-  text-align: center;
-  border-radius: 10px; 
-  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2); 
-  }
-  
-  .paket-bolumu h2 { 
-  color: #e21111; 
-  margin-top: 0;
-  }
-  
-  .paket {
-  border: 1px solid #ddd; 
-  padding: 15px;
-  margin-bottom: 15px;
-  }
-  
-  .paket h3 {
-  color: #333;
-  }
-  
-  .fiyat {
-  color: #e21111;
-  font-weight: bold;
-  }
-
-.odeme-bilgileri {
-  background-color: #e21111;
-  color: #fff;
-  border: none;
-  border-radius: 10px;
-  padding: 10px 20px;
-  cursor: pointer;
-  font-size: 16px;
-  font-weight: bold;
-  display: block;          
-  margin: 20px auto;     
-  width: 200px;          
-}
-
-.odeme-bilgileri:hover {
- background-color: #c50e0e;
-}
-
 .form iframe {
 border: none;  
 box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2); 
@@ -134,38 +68,53 @@ margin-left: auto;
 margin-right: auto;
 }
 
-.modal {
-  display: none; /* Varsayılan olarak gizli */
-  position: fixed; /* Sayfada sabit kalın */
-  z-index: 1; /* En üstte */
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  overflow: auto; /* İçerik gerektiğinde kaydırılabilir hale getirin*/
-  background-color: rgba(0, 0, 0, 0.4); /* Yarı saydam siyah arka plan */
+.paketlerimiz {
+  margin-top: 40px; /* Adjust as needed */
+  text-align: center;
 }
 
-.modal-content {
-  background-color: #fefefe;
-  margin: 15% auto; /* %15 üstten/alttan, otomatik merkezleme */
-  padding: 20px;
-  border: 1px solid #888;
-  width: 50%; /* İstenilen genişliğe ayarlanabilir */
-}
-
-.close-button {
-  color: #aaaaaa;
-  float: right;
+.paketlerimiz h2 {
   font-size: 28px;
-  font-weight: bold;
-  cursor: pointer;
+  margin-bottom: 20px;
 }
 
-.close-button:hover,
-.close-button:focus {
-  color: #000;
-  text-decoration: none;
+.paket-kutulari {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.paket {
+  width: 250px; /* Adjust as needed */
+  margin: 10px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.15);
+}
+
+.paket h3 {
+  margin-bottom: 10px;
+}
+
+.paket ul {
+  list-style: disc;
+  margin-left: 20px;
+}
+
+.paket .fiyat {
+  font-weight: bold;
+  margin-top: 15px;
+}
+
+.odeme-bilgileri {
+  margin-top: 40px; /* Adjust as needed */
+}
+
+.banka-detaylari {
+  background-color: #f5f5f5;
+  padding: 15px;
+  border-radius: 5px;
 }
 
 @media (max-width: 768px) {
@@ -179,10 +128,6 @@ margin-right: auto;
 
   .kayit-ol {
     margin-right: 10px;
-  }
-
-  .paketleri-gor {
-    width: 100%;
   }
 }
 

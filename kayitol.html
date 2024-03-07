@@ -22,63 +22,76 @@
     <a href="./kayitol.html" class="kayit-ol">KAYIT OLUN</a>
   </header>
   <main>
+
       <div class="form">
           <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdgAWA_2r4y7w74C-cmTnFPeKQOgtMQAB5nQumeFuIondn7UA/viewform?embedded=true" width="640" height="1120" frameborder="0" marginheight="0" marginwidth="0">Yükleniyor…</iframe>
       </div>
 
-     <section class="paketler-odeme">
-        <button class="paketleri-gor">Paketleri Gör</button>
-          <div id="odemeModal" class="modal">
-              <span class="close-button">&times;</span>
-              <h2>Ödeme Bilgileri</h2>
-              <p>Lütfen ödemeyi aşağıdaki hesaba yapın:</p>
-              <div>
-                  <b>Banka Adı:</b> Garanti Bankası <br>
-                  <b>Hesap Sahibi:</b> Samsun Atakum Rotaract <br>
-                  <b>IBAN:</b> TR00 0000 0000 0000 0000 0000 01 <br> 
-                  <b>Açıklama:</b> K12345 (Konferans Kaydı) 
-              </div>
-            </div>
-          <div class="paket-bolumu" id="paketler">
-              <h2>Paketlerimiz</h2>
+      <section class="paketlerimiz">
+        <h2>Paketlerimiz</h2>
+        <div class="paket-kutulari">
+          <div class="paket">
+            <h3>ANKARA PALACE</h3>
+            <ul>
+              <li>1 Kişilik Oda</li>
+              <li>2 Gece</li>
+              </ul>
+            <p class="fiyat">Kişi Başı Ücret: 11.165₺</p>
+          </div>
+          <div class="paket">
+            <h3>PERA PALACE</h3>
+            <ul>
+              <li>2 Kişilik Oda</li>
+              <li>2 Gece</li>
+              </ul>
+            <p class="fiyat">Kişi Başı Ücret: 7.805₺</p>
+          </div>
+          <div class="paket">
+            <h3>SÜMER PALACE</h3>
+            <ul>
+              <li>3 Kişilik Oda</li>
+              <li>3 Gece</li>
+              </ul>
+            <p class="fiyat">Kişi Başı Ücret: 7.525₺</p>
+          </div>
+          <div class="paket">
+            <h3>BANDIRMA</h3>
+            <ul>
+              <li>2 Kişilik Oda</li>
+              <li>1 Gece</li>
+              </ul>
+            <p class="fiyat">Kişi Başı Ücret: 5.005₺</p>
+          </div>
+          <div class="paket">
+            <h3>BEYOĞLU</h3>
+            <ul>
+              <li>1 Kişilik Oda</li>
+              <li>1 Gece</li>
+              </ul>
+            <p class="fiyat">Kişi Başı Ücret: 6.685₺</p>
+          </div>
+          <div class="paket">
+            <h3>DOLMABAHÇE</h3>
+            <ul>
+              <li>3 Kişilik Oda</li>
+              <li>1 Gece</li>
+              </ul>
+            <p class="fiyat">Kişi Başı Ücret: 4.865₺</p>
+          </div>
+          </div>
+      </section>
   
-              <div class="paket">
-                <h3>ANKARA PALACE</h3>
-                <p>1 Kişilik Oda - 2 Gece</p>
-                <span class="fiyat">Kişi Başı 11.165₺</span>
-              </div>
-
-              <div class="paket">
-                <h3>PERA PALACE</h3>
-                <p>2 Kişilik Oda - 2 Gece</p>
-                <span class="fiyat">Kişi Başı 7.805₺</span>
-              </div>
-
-              <div class="paket">
-                <h3>SÜMER PALACE</h3>
-                <p>3 Kişilik Oda - 3 Gece</p>
-                <span class="fiyat">Kişi Başı 7.525₺</span>
-            </div>
-
-            <div class="paket">
-              <h3>BANDIRMA</h3>
-              <p>2 Kişilik Oda - 1 Gece</p>
-              <span class="fiyat">Kişi Başı 5.005₺</span>
-          </div>
-
-            <div class="paket">
-              <h3>BEYOĞLU</h3>
-              <p>1 Kişilik Oda - 1 Gece</p>
-              <span class="fiyat">Kişi Başı 6.685₺</span>
-          </div>
-
-            <div class="paket">
-              <h3>DOLMABAHÇE</h3>
-             <span class="fiyat">Kişi Başı 4.865₺</span>
-          </div>
-
+      <section class="odeme-bilgileri">
+        <h2>Ödeme Bilgileri</h2>
+        <p>Lütfen ödemeyi aşağıdaki hesaba yapınız:</p>
+        <div class="banka-detaylari">
+          <p>Banka İsmi: AKBANK</p>
+          <p>Hesap İsmi: Atakum Rotaract Kulübü Derneği</p>
+          <p>IBAN: TR28 0004 6006 2188 8000 1786 88</p>
+          <p>Açıklama: Kulüp Adı-BAĞIŞ</p>
         </div>
       </section>
+
  </main>
 
    <footer>
@@ -88,32 +101,6 @@
     </div>
     <p class="telif-hakkı">© 2024 Demir Bülbüloğlu - Tüm Hakları Saklıdır.</p>
   </footer>
-
-  <script>
-    // Varsayılan olarak paketi gizliyoruz
-    paketBolumu.style.display = 'none';
-    odemeBilgileri.style.display = 'none';
-
-    paketleriGorButonu.addEventListener('click', function() {
-        paketBolumu.style.display = 'block'; //Paketi görünür yap
-        odemeBilgileri.style.display = 'block'; // Ödeme bilgilerini göster
-    });
-
-    let closeButton = document.querySelector('.close-button');
-
-    closeButton.addEventListener('click', function() {
-        paketBolumu.style.display = 'none';
-        odemeBilgileri.style.display = 'none';
-    });
-
-    window.onclick = function(event) {
-        if (event.target == odemeModal) {
-            paketBolumu.style.display = 'none';
-            odemeBilgileri.style.display = 'none';
-        }
-    }
-
-  </script>
 
 </body>
 </html>
