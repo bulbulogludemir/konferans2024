@@ -77,11 +77,11 @@ main {
   align-items: center;
 }
 
-.form-container {
+.form-bölümü {
   width: 95%;
 }
 
-.form-container iframe {
+.form-bölümü iframe {
   border: none;
   box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
   display: block;
