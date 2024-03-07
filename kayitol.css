@@ -90,7 +90,8 @@ body {
 
 /* Buton Tasarımı */
 .buttons-container {
-  align-items: center;
+    display: flex;
+    justify-content: center;
 }
 
 .paketler-buton {
