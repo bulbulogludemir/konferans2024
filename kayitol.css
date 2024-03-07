@@ -56,7 +56,6 @@ nav a:hover {
   color: #fff;
 }
 
-
 main {
   padding: 20px;
 }
@@ -72,13 +71,42 @@ main {
   font-size: 16px;
   font-weight: bold;
   display: block;           /* Blok seviyesinde olsun */
-  margin: 20px auto;        /* Ortalamak için */
+  margin: 20px auto;     
   width: 200px;             /* Butonun genişliğini ayarla*/
 }
 
 .paketleri-gor:hover {
   background-color: #c50e0e; /* Hover etkisi */
 }
+
+.paket-bolumu {
+  background-color: #fff;
+  padding: 20px;
+  margin: 20px 0; 
+  text-align: center;
+  border-radius: 10px; 
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2); 
+  }
+  
+  .paket-bolumu h2 { 
+  color: #e21111; 
+  margin-top: 0;
+  }
+  
+  .paket {
+  border: 1px solid #ddd; 
+  padding: 15px;
+  margin-bottom: 15px;
+  }
+  
+  .paket h3 {
+  color: #333;
+  }
+  
+  .fiyat {
+  color: #e21111;
+  font-weight: bold;
+  }
 
 .odeme-bilgileri {
   background-color: #e21111;
@@ -106,35 +134,6 @@ margin-left: auto;
 margin-right: auto;
 }
 
-.paket-bolumu {
-background-color: #fff;
-padding: 20px;
-margin: 20px 0; 
-text-align: center;
-border-radius: 10px; 
-box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2); 
-}
-
-.paket-bolumu h2 { 
-color: #e21111; 
-margin-top: 0;
-}
-
-.paket {
-border: 1px solid #ddd; 
-padding: 15px;
-margin-bottom: 15px;
-}
-
-.paket h3 {
-color: #333;
-}
-
-.fiyat {
-color: #e21111;
-font-weight: bold;
-}
-
 .modal {
   display: none; /* Varsayılan olarak gizli */
   position: fixed; /* Sayfada sabit kalın */
@@ -152,21 +151,39 @@ font-weight: bold;
   margin: 15% auto; /* %15 üstten/alttan, otomatik merkezleme */
   padding: 20px;
   border: 1px solid #888;
-  width: 40%; /* İstenilen genişliğe ayarlanabilir */
+  width: 50%; /* İstenilen genişliğe ayarlanabilir */
 }
 
 .close-button {
-  color: #aaa;
+  color: #aaaaaa;
   float: right;
   font-size: 28px;
   font-weight: bold;
+  cursor: pointer;
 }
 
 .close-button:hover,
 .close-button:focus {
-  color: black;
+  color: #000;
   text-decoration: none;
-  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .logo {
+    margin-left: 10px;
+  }
+
+  nav {
+    display: none;
+  }
+
+  .kayit-ol {
+    margin-right: 10px;
+  }
+
+  .paketleri-gor {
+    width: 100%;
+  }
 }
 
 footer {
