@@ -15,11 +15,11 @@ header {
   padding: 10px;
   background-color: #000000;
   opacity: 85%;
-  width: 100%;
 }
 
 .logo {
-  margin-left: 300px; /* İstenilen kenar boşluğu için değerle değiştirin */
+  margin-left: 300px;
+  margin-right: 20px;
 }
 
 .logo img {
@@ -29,6 +29,7 @@ header {
 
 nav {
   display: flex;
+  margin-right: 20px;
 }
 
 nav a {
@@ -50,6 +51,9 @@ nav a:hover {
   cursor: pointer;
   font-size: 16px;
   font-weight: bold;
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
 }
 
 .kayit-ol:hover {
@@ -179,6 +183,12 @@ main {
 
 /* Footer Area */
 footer {
+  background-color: #ccc;
+  padding: 10px;
+  text-align: center;
+}
+
+footer {
   background-color: rgb(56, 56, 56);
   color: white;
   padding: 20px;
@@ -207,34 +217,34 @@ footer {
 }
 
 /* Medya Sorguları */
-@media (max-width: 900px) {
+@media (max-width: 900px) { 
   .logo {
-    margin-left: 20px;
+      margin-left: 20px; 
   }
 
   nav a {
-    margin-right: 10px;
+      margin-right: 10px; 
   }
 
   .kayit-ol {
     margin-right: 20px;
-    font-size: 14px;
-  }
+    font-size: 14px; 
+  }  
 }
 
 @media (max-width: 600px) {
   header {
-    flex-direction: column;
-    align-items: flex-start;
+      flex-direction: column; 
+      align-items: flex-start;
   }
 
   .logo {
-    margin-left: 20px;
-    margin-bottom: 15px;
+      margin-left: 20px; 
+      margin-bottom: 15px; 
   }
 
   nav a {
-    margin-bottom: 10px;
+      margin-bottom: 10px; 
   }
 
   .kayit-ol {
@@ -242,47 +252,79 @@ footer {
     width: 100%;
   }
 
-  .form-container iframe {
-    width: 100%;
-  }
+  .form iframe {
+      width: 100%; 
+  } 
+} 
+
+@media (max-width: 900px) {
+.logo {
+  margin-left: 20px;
 }
 
-@media (min-width: 768px) {
-  .logo {
-    margin-left: 200px;
-  }
+nav a {
+  margin-right: 10px;
+}
 
-  nav a {
-    font-size: 20px;
-  }
+.kayit-ol {
+  margin-right: 20px;
+  font-size: 14px; 
+}   
+}
+
+@media (max-width: 600px) {
+header {
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo {
+  margin-left: 20px; 
+  margin-bottom: 15px;
+}
+
+nav a {
+  margin-bottom: 10px; 
+}
+
+.kayit-ol {
+  margin-right: 0;
+  width: 100%;
+}
+
+.icerik-bolmesi {
+  width: 80%; 
+}
+} 
+
+@media (min-width: 768px) {
+.logo {
+  margin-left: 200px;
+}
+
+nav a {
+  font-size: 20px; 
+}
 }
 
 @media (max-width: 767px) {
-  header {
-    flex-direction: column;
-    align-items: center;
-  }
+header {
+  flex-direction: column; 
+  align-items: center;
+}
 
-  .logo {
-    margin-left: 20px;
-  }
+.logo {
+  margin-left: 20px;
+}
 
-  nav {
-    margin-top: 10px;
-  }
+nav {
+  margin-top: 10px; 
+}
 
-  .kayit-ol {
-    margin-right: 75px;
-    align-items: center;
-    padding: 10px 0;
-    margin-left: 75px;
-  }
-
-  .form-bölümü {
-    width: 95%; /* Mobil ekranlar için tam genişlik */
-  }
-
-  .buttons-container {
-    flex-direction: column; /* Butonları alt alta sıralayın */
-  }
+.kayit-ol {
+  margin-right: 75px;
+  align-items: center;
+  padding: 10px 0;
+  margin-left: 75px;
+}
 }
