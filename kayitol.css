@@ -59,6 +59,12 @@ body {
   }
   
   /* Form */
+  .form-bölümü {
+    width: 640px; /* Formun genişliği (isteğinize göre ayarlayın)*/
+    margin: 0 auto;  /* Yatay olarak ortala */
+    text-align: center; /* Form içindeki elementleri ortala */
+  }
+
   .form iframe {
   border: none;
   box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
@@ -83,6 +89,10 @@ body {
 }
 
 /* Buton Tasarımı */
+.buttons-container {
+  text-align: center;
+}
+
 .paketler-buton {
   background-color: transparent;
   border: 3px solid #e21111;
@@ -252,5 +262,9 @@ body {
   align-items: center;
   padding: 10px 0;
   margin-left: 75px;
+  }
+
+  .form-bölümü {
+    width: 95%; /* Mobil ekranlar için tam genişlik */
   }
   }
