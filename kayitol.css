@@ -83,7 +83,7 @@ body {
 }
 
 /* Buton Tasarımı */
-.paketler-buton {
+.paketler-buton, odeme-bilgileri-buton {
   background-color: transparent;
   border: 3px solid #e21111;
   color: #e21111;
@@ -95,7 +95,7 @@ body {
   margin-bottom: 20px; /* Buton ile paketler arasına boşluk */
 }
 
-.paketler-buton:hover {
+.paketler-buton:hover, odeme-bilgileri-buton:hover {
   background-color: #e21111;
   color: #fff;
 }

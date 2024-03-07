@@ -12,7 +12,7 @@
   <header>
     <div class="logo">
       <img src="./images/logo.png">
-      </div>      
+    </div>
     <nav>
       <a href="./index.html">Ana Sayfa</a>
       <a href="./konferans.html">Konferans</a>
@@ -21,89 +21,72 @@
     </nav>
     <a href="./kayitol.html" class="kayit-ol">KAYIT OLUN</a>
   </header>
+
   <main>
-      <div class="form">
-        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdgAWA_2r4y7w74C-cmTnFPeKQOgtMQAB5nQumeFuIondn7UA/viewform?embedded=true" width="640" height="1120" frameborder="0" marginheight="0" marginwidth="0">Yükleniyor…</iframe>
-      </div>
-  
+    <section class="form-bölümü">
+      <h2>Kayıt Formu</h2>
+      <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdgAWA_2r4y7w74C-cmTnFPeKQOgtMQAB5nQumeFuIondn7UA/viewform?embedded=true" width="640" height="1120" frameborder="0" marginheight="0" marginwidth="0">Yükleniyor…</iframe>
+    </section>
+
+    <section class="paketler-bölümü">
       <button class="paketler-buton">Paketleri Gör</button>
-      <div id="paketler-acilir" class="paketler-bolumu">
+
+      <div id="paketler-acilir" style="display: none;">
         <div class="paket">
           <h3>ANKARA PALACE</h3>
           <p>1 Kişilik Oda - 2 Gece</p>
           <span class="fiyat">Kişi Başı: 11.165₺</span>
-      </div>
+        </div>
 
-      <div class="paket">
+        <div class="paket">
           <h3>PERA PALACE</h3>
           <p>2 Kişilik Oda - 2 Gece</p>
           <span class="fiyat">Kişi Başı: 7.805₺</span>
+        </div>
+
+        <div class="paket">
+          <h3>SÜMER PALACE</h3>
+          <p>3 Kişilik Oda - 2 Gece</p>
+          <span class="fiyat">Kişi Başı: 7.525₺</span>
+        </div>
+
+        <div class="paket">
+          <h3>BANDIRMA</h3>
+          <p>2 Kişilik Oda - 1 Gece</p>
+          <span class="fiyat">Kişi Başı: 5.005₺</span>
+        </div>
+
+        <div class="paket">
+          <h3>BEYOĞLU</h3>
+          <p>1 Kişilik Oda - 1 Gece</p>
+          <span class="fiyat">Kişi Başı: 6.685₺</span>
+        </div>
+
+        <div class="paket">
+          <h3>DOLMABAHÇE</h3>
+          <p>3 Kişilik Oda - 1 Gece</p>
+          <span class="fiyat">Kişi Başı: 4.865₺</span>
+        </div>
       </div>
+    </section>
 
-      <div class="paket">
-        <h3>SÜMER PALACE</h3>
-        <p>3 Kişilik Oda - 2 Gece</p>
-        <span class="fiyat">Kişi Başı: 7.525₺</span>
-    </div>
+    <section class="odeme-bilgileri-bölümü">
+      <button class="odeme-bilgileri-buton">Ödeme Bilgileri</button>
 
-    <div class="paket">
-      <h3>BANDIRMA</h3>
-      <p>2 Kişilik Oda - 1 Gece</p>
-      <span class="fiyat">Kişi Başı: 5.005₺</span>
-  </div>
-
-  <div class="paket">
-    <h3>BEYOĞLU</h3>
-    <p>1 Kişilik Oda - 1 Gece</p>
-    <span class="fiyat">Kişi Başı: 6.685₺</span>
-</div>
-
-<div class="paket">
-  <h3>DOLMABAHÇE</h3>
-  <p>3 Kişilik Oda - 1 Gece</p>
-  <span class="fiyat">Kişi Başı: 4.865₺</span>
-</div>
+      <div id="odeme-bilgileri" style="display: none;">
+        <div class="modal-icerik">
+          <span class="kapat">&times;</span>
+          <h2>Ödeme Bilgileri</h2>
+          <p>Banka Adı: ...</p>
+          <p>Hesap Adı: ...</p>
+          <p>IBAN: ...</p>
+          <p>Açıklama: ...</p>
         </div>
+      </div>
+    </section>
+  </main>
 
-        <button class="odeme-bilgileri-buton">Ödeme Bilgileri</button>
-        <div id="odeme-bilgileri" class="modal">
-          <div class="modal-icerik">
-            <span class="kapat">&times;</span>
-            <h2>Ödeme Bilgileri</h2>
-            <p>Banka Adı: ...</p>
-            <p>Hesap Adı: ...</p>
-            <p>IBAN: ...</p>
-            <p>Açıklama: ...</p>
-          </div>
-        </div>
- </main>
-
- <script>
-  const paketlerButon = document.querySelector(".paketler-buton");
-  const paketlerAcilir = document.getElementById("paketler-acilir");
-
-  paketlerButon.addEventListener("click", () => {
-    if (paketlerAcilir.style.display === "none") {
-      paketlerAcilir.style.display = "block";
-    } else {
-      paketlerAcilir.style.display = "none";
-    }
-  });
-
-const odemeButon = document.querySelector(".odeme-bilgileri-buton");
-const odemePopup = document.getElementById("odeme-bilgileri");
-const kapatButonu = document.querySelector(".kapat"); 
-
-odemeButon.addEventListener("click", () => {
-odemePopup.style.display = "block";
-});
-
-kapatButonu.addEventListener("click", () => {
-odemePopup.style.display = "none";
-});
-</script>
-
-   <footer>
+  <footer>
     <div class="sosyal-medya">
       <a href="https://www.instagram.com/konferans35"><i class="fab fa-instagram"></i></a>
       <a href="mailto:35.konferans@gmail.com"><i class="fa-solid fa-envelope"></i></a>
@@ -111,5 +94,29 @@ odemePopup.style.display = "none";
     <p class="telif-hakkı">© 2024 Demir Bülbüloğlu - Tüm Hakları Saklıdır.</p>
   </footer>
 
+  <script>
+    const paketlerButon = document.querySelector(".paketler-buton");
+    const paketlerAcilir = document.getElementById("paketler-acilir");
+
+    paketlerButon.addEventListener("click", () => {
+      if (paketlerAcilir.style.display === "none") {
+        paketlerAcilir.style.display = "block";
+      } else {
+        paketlerAcilir.style.display = "none";
+      }
+    });
+
+    const odemeButon = document.querySelector(".odeme-bilgileri-buton");
+    const odemePopup = document.getElementById("odeme-bilgileri");
+    const kapatButonu = document.querySelector(".kapat");
+
+    odemeButon.addEventListener("click", () => {
+      odemePopup.style.display = "block";
+    });
+
+    kapatButonu.addEventListener("click", () => {
+      odemePopup.style.display = "none";
+    });
+  </script>
 </body>
 </html>
