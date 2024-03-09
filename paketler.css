@@ -1,204 +1,77 @@
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-  }
-  
-  header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px;
-    background-color: #000000;
-    opacity: 85%;
-  }
-  
-  .logo {
-    margin-left: 300px;
-    margin-right: 20px;
-  }
-  
-  .logo img {
-    height: 60px;
-    width: auto;
-  }
-  
-  nav {
-    display: flex;
-    margin-right: 20px;
-  }
-  
-  nav a {
-    margin-right: 20px;
-    text-decoration: none;
-    color: #ffffff;
-  }
-  
-  nav a:hover {
-    color: #e21111;
-  }
-  
-  .kayit-ol {
-    background-color: transparent;
-    border: 3px solid #e21111;
-    color: #e21111;
-    border-radius: 10px;
-    padding: 10px 20px;
-    cursor: pointer;
-    font-size: 16px;
-    font-weight: bold;
-    display: flex;
-    justify-content: center;
-    text-decoration: none;
-  }
-  
-  .kayit-ol:hover {
-    background-color: #e21111;
-    color: #fff;
-  }
-  
-  
-  main {
-    padding: 20px;
-  }
-  
-  footer {
-    background-color: #ccc;
-    padding: 10px;
-    text-align: center;
-  }
+  font-family: Arial, sans-serif;
+  margin: 0;
+}
 
-  footer {
-    background-color: rgb(56, 56, 56);
-    color: white;
-    padding: 20px;
-    text-align: center;
-  }
-  
-  .sosyal-medya {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 10px;
-  }
-  
-  .sosyal-medya a {
-    margin: 0 10px;
-    color: white;
-    font-size: 24px;
-    transition: 0.3s;
-  }
-  
-  .sosyal-medya a:hover {
-    color: #e21111;
-  }
-  
-  .telif-hakkı {
-    margin: 0;
-  }
-  
-  @media (max-width: 900px) { 
-    .logo {
-        margin-left: 20px; 
-    }
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+}
 
-    nav a {
-        margin-right: 10px; 
-    }
+/* Stil genel konteyner */
+.paketlerimiz {
+  margin-top: 40px;
+  text-align: center;
+}
 
-    .kayit-ol {
-      margin-right: 20px;
-      font-size: 14px; 
-    }  
+.paketlerimiz h2 {
+  font-size: 36px;
+  margin-bottom: 30px;
+  color: #e21111; /* Kırmızı */
+}
+
+.paket-kutulari {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* Her paket için stillendirme */
+.paket {
+  flex: 0 0 30%;
+  margin: 20px;
+  padding: 25px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+  background-color: #fff; /* Beyaz */
+  transition: 0.3s;
+}
+
+.paket:hover {
+  box-shadow: 8px 8px 12px rgba(0, 0, 0, 0.3);
+}
+
+.paket h3 {
+  margin-bottom: 15px;
+  color: #000; /* Siyah */
+}
+
+.paket ul {
+  list-style: none;
+  padding: 0;
+}
+
+.paket ul li {
+  margin-bottom: 5px;
+  color: #666;
+}
+
+.paket .fiyat {
+  font-weight: bold;
+  margin-top: 15px;
+  color: #e21111; /* Kırmızı */
+}
+
+@media (max-width: 768px) {
+  .paket {
+    flex: 0 0 100%;
+  }
 }
 
 @media (max-width: 600px) {
-    header {
-        flex-direction: column; 
-        align-items: flex-start;
-    }
-
-    .logo {
-        margin-left: 20px; 
-        margin-bottom: 15px; 
-    }
-
-    nav a {
-        margin-bottom: 10px; 
-    }
-
-    .kayit-ol {
-      margin-right: 0;
-      width: 100%;
-    }
-} 
-
-@media (max-width: 900px) {
-  .logo {
-    margin-left: 20px;
-  }
-
-  nav a {
-    margin-right: 10px;
-  }
-
-  .kayit-ol {
-    margin-right: 20px;
-    font-size: 14px; 
-  }   
-}
-
-@media (max-width: 600px) {
-  header {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .logo {
-    margin-left: 20px; 
-    margin-bottom: 15px;
-  }
-
-  nav a {
-    margin-bottom: 10px; 
-  }
-
-  .kayit-ol {
-    margin-right: 0;
-    width: 100%;
-  }
-
-  .icerik-bolmesi {
-    width: 80%; 
-  }
-} 
-
-@media (min-width: 768px) {
-  .logo {
-    margin-left: 200px;
-  }
-
-  nav a {
-    font-size: 20px; 
-  }
-}
-
-@media (max-width: 767px) {
-  header {
-    flex-direction: column; 
-    align-items: center;
-  }
-
-  .logo {
-    margin-left: 20px;
-  }
-
-  nav {
-    margin-top: 10px; 
-  }
-
-  .kayit-ol {
-    margin-right: 75px;
-    align-items: center;
-    padding: 10px 0;
-    margin-left: 75px;
+  .paketlerimiz h2 {
+    font-size: 28px;
   }
 }
