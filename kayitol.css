@@ -120,23 +120,23 @@ main {
     padding: 15px;
     border-radius: 5px;
   }
+}
 
-  .kartla-ode {
-    border: 2px solid #e21111;
-    background-color: #e21111; 
-    color: #fff;
-    font-size: 16px;
-    border-radius: 10px;
-    padding: 10px 20px;
-    cursor: pointer;
-    text-decoration: none;
-    margin-top: 15px; 
-  }
+.kartla-ode {
+  border: 2px solid #e21111;
+  background-color: #e21111; 
+  color: #fff;
+  font-size: 16px;
+  border-radius: 10px;
+  padding: 10px 20px;
+  cursor: pointer;
+  text-decoration: none;
+  margin-top: 15px; 
+}
 
-  .kartla-ode:hover {
-    background-color: #fff;
-    color: #e21111;
-  }
+.kartla-ode:hover {
+  background-color: #fff;
+  color: #e21111;
 }
 
 footer {
@@ -183,7 +183,7 @@ footer {
     font-size: 14px;
   }
 
-  .odeme-bilgileri .kartla-ode {
+  .kartla-ode {
     margin-right: 20px;
   }
 }
@@ -211,7 +211,7 @@ nav a {
   width: 100%;
 }
 
-.odeme-bilgileri .kartla-ode {
+.kartla-ode {
   margin-right: 0;
   width: 100%;
 }
