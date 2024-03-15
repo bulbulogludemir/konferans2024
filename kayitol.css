@@ -12,16 +12,16 @@ footer {
 
 header {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  justify-content: space-between; /* Öğeleri sol-sağ arasında dağıt */
+  align-items: center;          /* Öğeleri dikey olarak ortala */
   padding: 10px;
+  background-color: #000000;
   opacity: 85%;
 }
 
 .logo {
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-left: 300px; /* Logoyu belirli bir mesafe kadar sola iter */
+  margin-right: 20px;
 }
 
 .logo img {
@@ -31,14 +31,11 @@ header {
 
 nav {
   display: flex;
-  justify-content: space-between;
-  width: 100%; 
-  margin-top: 10px;
-  align-items: center;
+  margin-right: 20px; 
 }
 
 nav a {
-  margin: 20px;
+  margin-right: 20px; /* Menü öğeleri arasında boşluk oluşturur */
   text-decoration: none;
   color: #ffffff;
 }
@@ -48,21 +45,22 @@ nav a:hover {
 }
 
 .kayit-ol {
-  margin-top: 10px;
-  background-color: #e21111; 
-  color: #fff;
-  border: 3px solid #e21111;
+  background-color: transparent; /* Arkaplanı şeffaf yapar */
+  border: 3px solid #e21111;  /* Kenarlığı belirler */
+  color: #e21111;
   border-radius: 10px;
   padding: 10px 20px;
+  cursor: pointer;
   font-size: 16px;
   font-weight: bold;
-  cursor: pointer;
+  display: flex;
+  justify-content: center; /* Buton içindeki içeriği ortalar */ 
   text-decoration: none;
 }
 
 .kayit-ol:hover {
-  background-color: #fff;
-  color: #e21111;
+  background-color: #e21111; /* Hover efektinde arkaplanı doldurur */
+  color: #fff;
 }
 
 main {
