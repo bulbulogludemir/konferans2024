@@ -222,7 +222,6 @@ footer {
   .form iframe {
     width: 100%; 
   }
-  }
 } 
 
 @media (max-width: 900px) {
@@ -263,7 +262,6 @@ nav a {
 .icerik-bolmesi {
   width: 80%; 
 }
-
 } 
 
 @media (min-width: 768px) {
@@ -296,4 +294,4 @@ nav a {
     padding: 10px 0;
     margin-left: 75px;
   }
-}
+  }
