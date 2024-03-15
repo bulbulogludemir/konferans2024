@@ -1,76 +1,76 @@
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-  }
-  
-  header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px;
-    background-color: #000000;
-    opacity: 85%;
-  }
-  
-  .logo {
-    margin-left: 300px;
-    margin-right: 20px;
-  }
-  
-  .logo img {
-    height: 60px;
-    width: auto;
-  }
-  
-  nav {
-    display: flex;
-    margin-right: 20px;
-  }
-  
-  nav a {
-    margin-right: 20px;
-    text-decoration: none;
-    color: #fff;
-  }
-  
-  nav a:hover {
-    color: #e21111;
-  }
-  
-  .kayit-ol {
-    background-color: transparent;
-    border: 3px solid #e21111;
-    color: #e21111;
-    border-radius: 10px;
-    padding: 10px 20px;
-    cursor: pointer;
-    font-size: 16px;
-    font-weight: bold;
-    display: flex;
-    justify-content: center;
-    text-decoration: none;
-  }
-  
-  .kayit-ol:hover {
-    background-color: #e21111;
-    color: #fff;
-  }
-  
-  main {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    padding: 20px;
-  }
+  font-family: Arial, sans-serif;
+  margin: 0;
+}
 
-  .hotel-header {
-    text-align: center;
-    padding: 20px 0; 
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #000000;
+  opacity: 85%;
+}
+
+.logo {
+  margin-left: 300px;
+  margin-right: 20px;
+}
+
+.logo img {
+  height: 60px;
+  width: auto;
+}
+
+nav {
+  display: flex;
+  margin-right: 20px;
+}
+
+nav a {
+  margin-right: 20px;
+  text-decoration: none;
+  color: #fff;
+}
+
+nav a:hover {
+  color: #e21111;
+}
+
+.kayit-ol {
+  background-color: transparent;
+  border: 3px solid #e21111;
+  color: #e21111;
+  border-radius: 10px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.kayit-ol:hover {
+  background-color: #e21111;
+  color: #fff;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.hotel-header {
+  text-align: center;
+  padding: 20px 0; 
 }
 
 .hotel-header h1 {
-    font-size: 50px;
-    margin-bottom: 20px;
+  font-size: 50px;
+  margin-bottom: 20px;
 }
 
 .hotel-header h2 {
@@ -79,18 +79,18 @@ body {
 }
 
 .image-gallery {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
 }
 
 .image-gallery img {
-    width: 250px; 
-    height: 200px; 
-    object-fit: cover;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  width: 250px;  
+  height: 200px; 
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 .otel-bilgileri iframe {
@@ -98,177 +98,85 @@ body {
   height: 350px;
   border: 2px solid rgb(56, 56, 56);
   border-radius: 8px;
-  box-shadow:  0 2px 5px rgba(0,0,0,0.2);
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
 }
 
-  footer {
-    background-color: rgb(56, 56, 56);
-    color: white;
-    padding: 20px;
-    text-align: center;
-  }
-  
-  .sosyal-medya {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 10px;
-  }
-  
-  .sosyal-medya a {
-    margin: 0 10px;
-    color: white;
-    font-size: 24px;
-    transition: 0.3s;
-  }
-  
-  .sosyal-medya a:hover {
-    color: #e21111;
-  }
-  
-  .telif-hakkı {
-    margin: 0;
-  }
-  
-  @media (max-width: 900px) {
-    .hotel-header h1 {
-        font-size: 40px;
-    }
+footer {
+  background-color: rgb(56, 56, 56);
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
 
-    .image-gallery {
-        flex-direction: column; 
-        align-items: center;
-    }
+.sosyal-medya {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
 
-    .image-gallery img {
-        margin-bottom: 10px;
-    }
+.sosyal-medya a {
+  margin: 0 10px;
+  color: white;
+  font-size: 24px;
+  transition: 0.3s;
+}
 
-    .kayit-ol {
-      margin-right: 20px;
-      font-size: 14px; 
-    }
+.sosyal-medya a:hover {
+  color: #e21111;
+}
 
-} 
-
-@media (max-width: 600px) {    
-    .logo {
-        margin-left: 20px; 
-    }
-
-    nav a {
-        margin-right: 10px; 
-    }
-
-    .image-gallery img { 
-        width: 100%; 
-    } 
-
+.telif-hakkı {
+  margin: 0;
 }
 
 @media (max-width: 900px) {
-  .logo {
-      margin-left: 20px;
+  .hotel-header h1 {
+      font-size: 40px; 
   }
 
-  nav a {
-      margin-right: 10px; 
-  }  
-}
-
-@media (max-width: 600px) {
-  header {
-      flex-direction: column;
-      align-items: flex-start;
+  .image-gallery {
+      flex-direction: column; 
+      align-items: center;
   }
 
-  .logo {
-      margin-left: 20px; 
-      margin-bottom: 15px;
-  }
-
-  nav a {
+  .image-gallery img {
       margin-bottom: 10px; 
   }
 
   .kayit-ol {
-      margin-right: 0;
-      width: 100%;
-  }
-
-  .icerik-bolmesi {
-      width: 95%; 
-  }
-
-} 
-
-@media (max-width: 900px) {
-  .logo {
-    margin-left: 20px;
-  }
-
-  nav a {
-    margin-right: 10px;
-  }
-
-  .kayit-ol {
     margin-right: 20px;
-    font-size: 14px; 
-  }   
+    font-size: 14px;
+  }
 }
 
 @media (max-width: 600px) {
+  .image-gallery img { 
+    width: 100%;  
+  } 
+}
+
+@media (max-width: 767px) {
   header {
     flex-direction: column;
     align-items: center;
   }
 
   .logo {
-    margin-left: 20px; 
+    margin-left: 20px;
     margin-bottom: 15px;
   }
 
-  nav a {
-    margin-bottom: 10px; 
-  }
-
-  .kayit-ol {
-    margin-right: 0;
-    width: 100%;
-  }
-
-  .icerik-bolmesi {
-    width: 80%; 
-  }
-} 
-
-@media (min-width: 768px) {
-  .logo {
-    margin-left: 200px;
-  }
-
-  nav a {
-    font-size: 20px; 
-  }
-}
-
-@media (max-width: 767px) {
-  header {
-    flex-direction: column; 
-    align-items: center;
-  }
-
-  .logo {
-    margin-left: 20px;
-  }
-
   nav {
-    margin-top: 10px; 
+    margin-top: 10px;
+  }
+
+  nav a {
+    margin-bottom: 10px;
   }
 
   .kayit-ol {
-    margin-right: 75px;
-    align-items: center;
+    margin: 0 75px 0 75px;
     padding: 10px 0;
-    margin-left: 75px;
+    width: 100%;
   }
 }

@@ -3,23 +3,28 @@ body {
   margin: 0;
 }
 
-header,
-footer {
-  background-color: #000000;
-  color: #ffffff;
+body::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255);
+  z-index: -1;
 }
 
 header {
   display: flex;
-  justify-content: space-between; /* Öğeleri sol-sağ arasında dağıt */
-  align-items: center;    /* Öğeleri dikey olarak ortala */
+  justify-content: space-between;
+  align-items: center;
   padding: 10px;
   background-color: #000000;
   opacity: 85%;
 }
 
 .logo {
-  margin-left: 300px; /* Logoyu belirli bir mesafe kadar sola iter */
+  margin-left: 30px;
   margin-right: 20px;
 }
 
@@ -30,11 +35,11 @@ header {
 
 nav {
   display: flex;
-  margin-right: 20px; 
+  margin-right: 20px;
 }
 
 nav a {
-  margin-right: 20px; /* Menü öğeleri arasında boşluk oluşturur */
+  margin-right: 20px;
   text-decoration: none;
   color: #ffffff;
 }
@@ -44,8 +49,8 @@ nav a:hover {
 }
 
 .kayit-ol {
-  background-color: transparent; /* Arkaplanı şeffaf yapar */
-  border: 3px solid #e21111; /* Kenarlığı belirler */
+  background-color: transparent;
+  border: 3px solid #e21111;
   color: #e21111;
   border-radius: 10px;
   padding: 10px 20px;
@@ -53,12 +58,12 @@ nav a:hover {
   font-size: 16px;
   font-weight: bold;
   display: flex;
-  justify-content: center; /* Buton içindeki içeriği ortalar */ 
+  justify-content: center;
   text-decoration: none;
 }
 
 .kayit-ol:hover {
-  background-color: #e21111; /* Hover efektinde arkaplanı doldurur */
+  background-color: #e21111;
   color: #fff;
 }
 
@@ -142,6 +147,7 @@ main {
   margin-bottom: 20px;
   margin-top: 0;
   display: block;
+  text-align: center;
   }
   
   .kartla-ode:hover {
@@ -150,55 +156,34 @@ main {
   }
   
   footer {
-  padding: 20px;
-  text-align: center;
+    background-color: rgb(56, 56, 56);
+    color: white;
+    padding: 20px;
+    text-align: center;
   }
   
   .sosyal-medya {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
   }
   
   .sosyal-medya a {
-  margin: 0 10px;
-  color: white;
-  font-size: 24px;
-  transition: 0.3s;
+    margin: 0 10px;
+    color: white;
+    font-size: 24px;
+    transition: 0.3s;
   }
   
   .sosyal-medya a:hover {
-  color: #e21111;
+    color: #e21111;
   }
   
   .telif-hakkı {
-  margin: 0;
+    margin: 0;
   }
   
-  /* Medya Soruları */
-  
   @media only screen and (max-width: 480px) {
-    /* Mobil Cihazlar */
-  
-    header {
-      flex-direction: column;
-      align-items: center;
-    }
-    
-    .logo {
-      margin-left: 20px; 
-      margin-bottom: 15px;
-    }
-    
-    nav a {
-      margin-bottom: 10px; 
-    }
-    
-    .kayit-ol {
-      margin-right: 0;
-      width: 100%;
-    }
-  
     .form iframe {
       width: 100%;
     }
@@ -212,47 +197,42 @@ main {
       padding: 5px 10px;
       margin-bottom: 10px;
     }
-  
-    footer {
-      padding: 10px;
+  }
+
+  @media (max-width: 900px) {
+    .kayit-ol {
+      margin-right: 20px;
+      font-size: 14px;
     }
+  
   }
   
-  @media only screen and (min-width: 481px) and (max-width: 768px) {
-    /* Tabletler */
-  
+  @media (max-width: 767px) {
     header {
-      flex-direction: column; 
+      flex-direction: column;
       align-items: center;
     }
-    
+  
     .logo {
       margin-left: 20px;
+      margin-bottom: 15px;
     }
-    
+  
     nav {
-      margin-top: 10px; 
+      margin-top: 10px;
     }
-    
+  
+    nav a {
+      margin-bottom: 10px;
+    }
+  
     .kayit-ol {
-      margin-right: 75px;
-      align-items: center;
+      margin: 0 75px 0 75px;
       padding: 10px 0;
-      margin-left: 75px;
+      width: 100%;
     }
 
     .form iframe {
       width: 100%;
     }
   }
-  
-  @media only screen and (min-width: 769px) {
-    /* Masaüstü Ekranlar */
-    .logo {
-      margin-left: 200px;
-    }
-    
-    nav a {
-      font-size: 20px; 
-    }
-  }  
