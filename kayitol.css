@@ -1,6 +1,13 @@
+/* Genel */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
+}
+
+header,
+footer {
+  background-color: #000000;
+  color: #ffffff;
 }
 
 header {
@@ -8,7 +15,6 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 10px;
-  background-color: #000000;
   opacity: 85%;
 }
 
@@ -38,7 +44,7 @@ nav a:hover {
 }
 
 .kayit-ol {
-  background-color: #e21111; 
+  background-color: #e21111;
   color: #fff;
   border: 3px solid #e21111;
   border-radius: 10px;
@@ -124,7 +130,7 @@ main {
 
 .kartla-ode {
   border: 2px solid #e21111;
-  background-color: #e21111; 
+  background-color: #e21111;
   color: #fff;
   font-size: 16px;
   border-radius: 10px;
@@ -142,8 +148,6 @@ main {
 }
 
 footer {
-  background-color: rgb(56, 56, 56);
-  color: white;
   padding: 20px;
   text-align: center;
 }
@@ -169,109 +173,70 @@ footer {
   margin: 0;
 }
 
-footer {
-  background-color: rgb(56, 56, 56);
-  color: white;
-  padding: 20px;
-  text-align: center;
-}
+/* Media Soruları */
 
-.sosyal-medya {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 10px;
-}
+@media only screen and (max-width: 480px) {
+  /* Mobil Cihazlar */
 
-.sosyal-medya a {
-  margin: 0 10px;
-  color: white;
-  font-size: 24px;
-  transition: 0.3s;
-}
-
-.sosyal-medya a:hover {
-  color: #e21111;
-}
-
-.telif-hakkı {
-  margin: 0;
-}
-
-/* Medya Sorguları */ 
-
-@media (max-width: 900px) {
-  .logo {
-    margin-left: 20px;
+  header {
+    padding: 10px 5px;
   }
 
-  nav a {
-    margin-right: 10px;
+  .logo {
+    margin-left: 150px;
+  }
+
+  nav {
+    display: none;
   }
 
   .kayit-ol {
-    margin-right: 20px;
+    display: none;
+  }
+
+  .onemli-bilgilendirme {
+    padding: 15px;
+  }
+
+  .form iframe {
+    width: 90%;
+  }
+
+  .odeme-bilgileri {
+    margin-top: 20px;
+  }
+
+  .kartla-ode {
     font-size: 14px;
+    padding: 5px 10px;
+    margin-bottom: 10px;
   }
 
-  .odeme-bilgileri .kartla-ode {
-    margin-right: 20px;
+  footer {
+    padding: 10px;
   }
 }
 
-@media (max-width: 600px) { 
-  header {
-  flex-direction: column; 
-  align-items: flex-start;
-}
-.logo {
-  margin-left: 20px;
-  margin-bottom: 15px;
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  /* Tabletler */
+
+  nav {
+    display: flex;
+  }
+
+  .logo {
+    margin-left: 200px;
+  }
+
+  .form iframe {
+    width: 75%;
+  }
 }
 
-nav a {
-  margin-bottom: 10px;
-}
+@media only screen and (min-width: 769px) {
+  /* Masaüstü Ekranlar */
 
-.kayit-ol {
-  margin-right: 0;
-  width: 100%;
-}
-
-.form iframe {
-  width: 100%;
-}
-
-.odeme-bilgileri .kartla-ode {
-  margin-right: 0;
-  width: 100%;
-}
-}
-
-@media (min-width: 768px) {
-.logo {
-  margin-left: 200px;
-}
-
-nav a {
-  font-size: 20px;
-}
-}
-
-@media (max-width: 767px) {
-header {
-  flex-direction: column;
-  align-items: center;
-}
-
-.logo img {
-  height: 40px;
-}
-
-nav {
-  margin-bottom: 15px;
-}
-
-.kayit-ol {
-  margin-top: 15px;
-}
+  .form iframe {
+    width: 60%;
+  }
 }
