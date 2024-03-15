@@ -38,22 +38,20 @@ nav a:hover {
 }
 
 .kayit-ol {
-  background-color: transparent;
+  background-color: #e21111; 
+  color: #fff;
   border: 3px solid #e21111;
-  color: #e21111;
   border-radius: 10px;
   padding: 10px 20px;
-  cursor: pointer;
   font-size: 16px;
   font-weight: bold;
-  display: flex;
-  justify-content: center;
+  cursor: pointer;
   text-decoration: none;
 }
 
 .kayit-ol:hover {
-  background-color: #e21111;
-  color: #fff;
+  background-color: #fff;
+  color: #e21111;
 }
 
 main {
@@ -99,11 +97,11 @@ main {
 }
 
 .form iframe {
-border: none;  
-box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2); 
-display: block;
-margin-left: auto;
-margin-right: auto;
+  border: none;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .odeme-bilgileri {
@@ -123,37 +121,22 @@ margin-right: auto;
     border-radius: 5px;
   }
 
-  .kartla-ode  {
-    background-color: #e21111;
+  .kartla-ode {
+    border: 2px solid #e21111;
+    background-color: #e21111; 
     color: #fff;
-    border: 3px solid #e21111;
+    font-size: 16px;
     border-radius: 10px;
     padding: 10px 20px;
-    font-size: 16px;
-    font-weight: bold;
     cursor: pointer;
     text-decoration: none;
+    margin-top: 15px; 
   }
 
   .kartla-ode:hover {
     background-color: #fff;
     color: #e21111;
-}
-
-@media (max-width: 768px) {
-  .logo {
-    margin-left: 10px;
   }
-
-  .kayit-ol {
-    margin-right: 10px;
-  }
-}
-
-footer {
-  background-color: #ccc;
-  padding: 10px;
-  text-align: center;
 }
 
 footer {
@@ -184,74 +167,39 @@ footer {
   margin: 0;
 }
 
-@media (max-width: 900px) { 
+/* Medya Sorguları */ 
+
+@media (max-width: 900px) {
   .logo {
-      margin-left: 20px; 
+    margin-left: 20px;
   }
 
   nav a {
-      margin-right: 10px; 
+    margin-right: 10px;
   }
 
   .kayit-ol {
     margin-right: 20px;
-    font-size: 14px; 
+    font-size: 14px;
+  }
+
+  .odeme-bilgileri .kartla-ode {
+    margin-right: 20px;
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 600px) { 
   header {
-      flex-direction: column; 
-      align-items: flex-start;
-  }
-
-  .logo {
-      margin-left: 20px; 
-      margin-bottom: 15px; 
-  }
-
-  nav a {
-      margin-bottom: 10px; 
-  }
-
-  .kayit-ol {
-    margin-right: 0;
-    width: 100%;
-  }
-
-  .form iframe {
-    width: 100%; 
-  }
-} 
-
-@media (max-width: 900px) {
+  flex-direction: column; 
+  align-items: flex-start;
+}
 .logo {
   margin-left: 20px;
-}
-
-nav a {
-  margin-right: 10px;
-}
-
-.kayit-ol {
-  margin-right: 20px;
-  font-size: 14px; 
-}   
-}
-
-@media (max-width: 600px) {
-header {
-  flex-direction: column;
-  align-items: center;
-}
-
-.logo {
-  margin-left: 20px; 
   margin-bottom: 15px;
 }
 
 nav a {
-  margin-bottom: 10px; 
+  margin-bottom: 10px;
 }
 
 .kayit-ol {
@@ -259,10 +207,15 @@ nav a {
   width: 100%;
 }
 
-.icerik-bolmesi {
-  width: 80%; 
+.form iframe {
+  width: 100%;
 }
-} 
+
+.odeme-bilgileri .kartla-ode {
+  margin-right: 0;
+  width: 100%;
+}
+}
 
 @media (min-width: 768px) {
 .logo {
@@ -270,28 +223,25 @@ nav a {
 }
 
 nav a {
-  font-size: 20px; 
+  font-size: 20px;
 }
 }
 
 @media (max-width: 767px) {
-  header {
-    flex-direction: column; 
-    align-items: center;
-  }
-  
-  .logo {
-    margin-left: 20px;
-  }
-  
-  nav {
-    margin-top: 10px; 
-  }
-  
-  .kayit-ol {
-    margin-right: 75px;
-    align-items: center;
-    padding: 10px 0;
-    margin-left: 75px;
-  }
-  }
+header {
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo img {
+  height: 40px;
+}
+
+nav {
+  margin-bottom: 15px;
+}
+
+.kayit-ol {
+  margin-top: 15px;
+}
+}
