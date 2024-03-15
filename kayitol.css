@@ -1,4 +1,3 @@
-/* Genel */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -13,7 +12,7 @@ footer {
 header {
   display: flex;
   justify-content: space-between; /* Öğeleri sol-sağ arasında dağıt */
-  align-items: center;          /* Öğeleri dikey olarak ortala */
+  align-items: center;    /* Öğeleri dikey olarak ortala */
   padding: 10px;
   background-color: #000000;
   opacity: 85%;
@@ -46,7 +45,7 @@ nav a:hover {
 
 .kayit-ol {
   background-color: transparent; /* Arkaplanı şeffaf yapar */
-  border: 3px solid #e21111;  /* Kenarlığı belirler */
+  border: 3px solid #e21111; /* Kenarlığı belirler */
   color: #e21111;
   border-radius: 10px;
   padding: 10px 20px;
@@ -143,110 +142,110 @@ main {
   margin-bottom: 20px;
   margin-top: 0;
   display: block;
-}
-
-.kartla-ode:hover {
+  }
+  
+  .kartla-ode:hover {
   background-color: #fff;
   color: #e21111;
-}
-
-footer {
+  }
+  
+  footer {
   padding: 20px;
   text-align: center;
-}
-
-.sosyal-medya {
+  }
+  
+  .sosyal-medya {
   display: flex;
   justify-content: center;
   margin-bottom: 10px;
-}
-
-.sosyal-medya a {
+  }
+  
+  .sosyal-medya a {
   margin: 0 10px;
   color: white;
   font-size: 24px;
   transition: 0.3s;
-}
-
-.sosyal-medya a:hover {
+  }
+  
+  .sosyal-medya a:hover {
   color: #e21111;
-}
-
-.telif-hakkı {
+  }
+  
+  .telif-hakkı {
   margin: 0;
-}
-
-/* Media Soruları */
-
-@media only screen and (max-width: 480px) {
-  /* Mobil Cihazlar */
-
-  header {
-    flex-direction: column; 
-    justify-content: center; 
-    align-items: center;
-    text-align: center; /* Logo, menü ve butonu ortalar */
   }
-
-  .logo {
-    margin: 10px 0; /* Logo için üst-alt boşluk ekler */
-    margin-left: 0; /* Margin-left sıfırlar */
+  
+  /* Medya Soruları */
+  
+  @media only screen and (max-width: 480px) {
+    /* Mobil Cihazlar */
+  
+    header {
+      flex-direction: column; 
+      justify-content: center; 
+      align-items: center;
+      text-align: center; /* Logo, menü ve butonu ortalar */
+    }
+  
+    .logo {
+      margin: 10px 0; /* Logo için üst-alt boşluk ekler */
+      margin-left: 0; /* Margin-left sıfırlar */
+    }
+  
+    nav {
+      margin-bottom: 10px; 
+      width: 100%; /* Menü öğelerinin tam genişlikte olmasını sağlar */
+    }
+  
+    nav a {
+      display: block; /* Menü öğelerini ayrı satırlara yerleştirir */
+      margin: 5px 0; /* Menü öğelerinin arasında boşluk ekler */
+    }
+  
+    .kayit-ol {
+      width: 100%; /* Butonun tam genişlikte olmasını sağlar */
+      margin-top: 10px; /* Buton ve menü öğeleri arasında boşluk ekler */
+    }
+  
+    .form iframe {
+      width: 100%;
+    }
+  
+    .odeme-bilgileri {
+      margin-top: 20px;
+    }
+  
+    .kartla-ode {
+      font-size: 14px;
+      padding: 5px 10px;
+      margin-bottom: 10px;
+    }
+  
+    footer {
+      padding: 10px;
+    }
   }
-
-  nav {
-    margin-bottom: 10px; 
-    width: 100%; /* Menü öğelerinin tam genişlikte olmasını sağlar */
+  
+  @media only screen and (min-width: 481px) and (max-width: 768px) {
+    /* Tabletler */
+  
+    nav {
+      display: flex;
+    }
+  
+    .logo {
+      margin-left: 200px;
+    }
+  
+    .form iframe {
+      width: 100%;
+    }
   }
-
-  nav a {
-    display: block; /* Menü öğelerini ayrı satırlara yerleştirir */
-    margin: 5px 0;  /* Menü öğelerinin arasında boşluk ekler */
-  }
-
-  .kayit-ol {
-    width: 100%; /* Butonun tam genişlikte olmasını sağlar */
-    margin-top: 10px;  /* Buton ve menü öğeleri arasında boşluk ekler */
-  }
-
-  .form iframe {
-    width: 100%;
-  }
-
-  .odeme-bilgileri {
-    margin-top: 20px;
-  }
-
-  .kartla-ode {
-    font-size: 14px;
-    padding: 5px 10px;
-    margin-bottom: 10px;
-  }
-
-  footer {
-    padding: 10px;
-  }
-}
-
-@media only screen and (min-width: 481px) and (max-width: 768px) {
-  /* Tabletler */
-
-  nav {
-    display: flex;
-  }
-
-  .logo {
-    margin-left: 200px;
-  }
-
-  .form iframe {
-    width: 100%;
-  }
-}
-
-@media only screen and (min-width: 769px) {
-  /* Masaüstü Ekranlar */
-
-  .form iframe {
-    width: 100%;
-  }
-}
+  
+  @media only screen and (min-width: 769px) {
+    /* Masaüstü Ekranlar */
+  
+    .form iframe {
+      width: 100%;
+    }
+  }  
