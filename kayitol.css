@@ -32,12 +32,13 @@ header {
 nav {
   display: flex;
   justify-content: space-between;
-  width: 100%;
+  width: 100%; 
   margin-top: 10px;
+  align-items: center;
 }
 
 nav a {
-  margin: 0 10px;
+  margin: 20px;
   text-decoration: none;
   color: #ffffff;
 }
@@ -183,7 +184,7 @@ footer {
   /* Mobil Cihazlar */
 
   header {
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
   }
@@ -201,7 +202,7 @@ footer {
   }
 
   .form iframe {
-    width: 90%;
+    width: 100%;
   }
 
   .odeme-bilgileri {
@@ -231,7 +232,7 @@ footer {
   }
 
   .form iframe {
-    width: 90%;
+    width: 100%;
   }
 }
 
@@ -239,7 +240,6 @@ footer {
   /* Masaüstü Ekranlar */
 
   .form iframe {
-    width: 90%;
+    width: 100%;
   }
 }
-
