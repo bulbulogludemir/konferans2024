@@ -60,6 +60,31 @@ main {
   padding: 20px;
 }
 
+.onemli-bilgilendirme {
+  background-color: #f5f5f5;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+}
+
+.onemli-bilgilendirme h2 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.onemli-bilgilendirme ul {
+  list-style: none;
+  padding: 0;
+}
+
+.onemli-bilgilendirme ul li {
+  margin-bottom: 10px;
+  padding: 5px 0;
+  border-bottom: 1px solid #ddd;
+}
+
 .form iframe {
 border: none;  
 box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2); 
