@@ -215,7 +215,11 @@ footer {
     font-size: 14px;
   }
 
-  .odeme-bilgileri .kartla-ode {
+  .odeme-bilgileri {
+    margin-right: 20px;
+  }
+
+  .kartla-ode {
     margin-right: 20px;
   }
 }
@@ -244,6 +248,11 @@ nav a {
 }
 
 .odeme-bilgileri .kartla-ode {
+  margin-right: 0;
+  width: 100%;
+}
+
+.kartla-ode {
   margin-right: 0;
   width: 100%;
 }
