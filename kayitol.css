@@ -61,28 +61,41 @@ main {
 }
 
 .onemli-bilgilendirme {
-  background-color: #f5f5f5;
+  background-color: #f7f7f7;
   padding: 20px;
   margin-bottom: 20px;
-  border-radius: 5px;
-}
+  border-radius: 10px;
 
-.onemli-bilgilendirme h2 {
-  margin-top: 0;
-  margin-bottom: 10px;
-  font-size: 18px;
-  font-weight: bold;
-}
+  h2 {
+    font-size: 20px;
+  }
 
-.onemli-bilgilendirme ul {
-  list-style: none;
-  padding: 0;
-}
+  p {
+    font-size: 16px;
+  }
 
-.onemli-bilgilendirme ul li {
-  margin-bottom: 10px;
-  padding: 5px 0;
-  border-bottom: 1px solid #ddd;
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  li {
+    margin-bottom: 15px;
+    padding: 5px 0;
+    border-bottom: 1px solid #ddd;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 5px;
+      font-family: "Font Awesome 5 Free";
+      font-weight: 900;
+      color: #e21111;
+      font-size: 16px;
+    }
+  }
 }
 
 .form iframe {
@@ -95,12 +108,28 @@ margin-right: auto;
 
 .odeme-bilgileri {
   margin-top: 40px;
-}
 
-.banka-detaylari {
-  background-color: #f5f5f5;
-  padding: 15px;
-  border-radius: 5px;
+  h2 {
+    font-size: 20px;
+  }
+
+  p {
+    font-size: 16px;
+  }
+
+  .banka-detaylari {
+    background-color: #f5f5f5;
+    padding: 15px;
+    border-radius: 5px;
+  }
+
+  .kartla-odeme {
+    border: 2px solid #e21111;
+    background-color: #ffffff;
+    color: #e21111;
+    font-size: 16px;
+    margin-right: 0;
+  }
 }
 
 @media (max-width: 768px) {
@@ -159,7 +188,11 @@ footer {
   .kayit-ol {
     margin-right: 20px;
     font-size: 14px; 
-  }  
+  }
+  
+  .odeme-bilgileri .kartla-odeme {
+    margin-right: 20px;
+  }
 }
 
 @media (max-width: 600px) {
@@ -184,7 +217,11 @@ footer {
 
   .form iframe {
     width: 100%; 
-} 
+  }
+  
+  .odeme-bilgileri .kartla-odeme {
+    margin-right: 20px;
+  }
 } 
 
 @media (max-width: 900px) {
@@ -224,6 +261,11 @@ nav a {
 
 .icerik-bolmesi {
   width: 80%; 
+}
+
+.odeme-bilgileri .kartla-odeme {
+  margin-right: 0;
+  width: 100%;
 }
 } 
 
