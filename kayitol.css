@@ -197,10 +197,6 @@ footer {
     margin-right: 20px;
     font-size: 14px; 
   }
-  
-  .odeme-bilgileri .kartla-odeme {
-    margin-right: 20px;
-  }
 }
 
 @media (max-width: 600px) {
@@ -226,9 +222,6 @@ footer {
   .form iframe {
     width: 100%; 
   }
-  
-  .odeme-bilgileri .kartla-odeme {
-    margin-right: 20px;
   }
 } 
 
@@ -271,10 +264,6 @@ nav a {
   width: 80%; 
 }
 
-.odeme-bilgileri .kartla-odeme {
-  margin-right: 0;
-  width: 100%;
-}
 } 
 
 @media (min-width: 768px) {
