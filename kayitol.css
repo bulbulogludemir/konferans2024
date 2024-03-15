@@ -12,29 +12,26 @@ footer {
 
 header {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
   align-items: center;
   padding: 10px;
   opacity: 85%;
 }
 
 .logo {
-  margin-left: 300px;
-  margin-right: 20px;
-}
-
-.logo img {
-  height: 60px;
-  width: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 nav {
   display: flex;
-  margin-right: 20px;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 10px;
 }
 
 nav a {
-  margin-right: 20px;
+  margin: 0 10px;
   text-decoration: none;
   color: #ffffff;
 }
@@ -44,7 +41,8 @@ nav a:hover {
 }
 
 .kayit-ol {
-  background-color: #e21111;
+  margin-top: 10px;
+  background-color: #e21111; 
   color: #fff;
   border: 3px solid #e21111;
   border-radius: 10px;
@@ -130,7 +128,7 @@ main {
 
 .kartla-ode {
   border: 2px solid #e21111;
-  background-color: #e21111;
+  background-color: #e21111; 
   color: #fff;
   font-size: 16px;
   border-radius: 10px;
@@ -179,23 +177,21 @@ footer {
   /* Mobil Cihazlar */
 
   header {
-    padding: 10px 5px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
   }
 
   .logo {
-    margin-left: 150px;
+    margin: 0;
   }
 
   nav {
-    display: none;
+    margin-bottom: 10px;
   }
 
   .kayit-ol {
-    display: none;
-  }
-
-  .onemli-bilgilendirme {
-    padding: 15px;
+    margin-top: 0;
   }
 
   .form iframe {
@@ -229,7 +225,7 @@ footer {
   }
 
   .form iframe {
-    width: 80%;
+    width: 75%;
   }
 }
 
@@ -237,6 +233,7 @@ footer {
   /* Masaüstü Ekranlar */
 
   .form iframe {
-    width: 80min%;
+    width: 60%;
   }
 }
+
