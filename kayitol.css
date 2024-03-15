@@ -23,6 +23,11 @@ header {
   margin-bottom: 10px;
 }
 
+.logo img {
+  height: 60px;
+  width: auto;
+}
+
 nav {
   display: flex;
   justify-content: space-between;
