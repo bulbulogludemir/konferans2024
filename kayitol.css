@@ -182,21 +182,30 @@ footer {
   /* Mobil Cihazlar */
 
   header {
-    flex-direction: column;
-    justify-content: center;
+    flex-direction: column; 
+    justify-content: center; 
     align-items: center;
+    text-align: center; /* Logo, menü ve butonu ortalar */
   }
 
   .logo {
-    margin: 0;
+    margin: 10px 0; /* Logo için üst-alt boşluk ekler */
+    margin-left: 0; /* Margin-left sıfırlar */
   }
 
   nav {
-    margin-bottom: 10px;
+    margin-bottom: 10px; 
+    width: 100%; /* Menü öğelerinin tam genişlikte olmasını sağlar */
+  }
+
+  nav a {
+    display: block; /* Menü öğelerini ayrı satırlara yerleştirir */
+    margin: 5px 0;  /* Menü öğelerinin arasında boşluk ekler */
   }
 
   .kayit-ol {
-    margin-top: 0;
+    width: 100%; /* Butonun tam genişlikte olmasını sağlar */
+    margin-top: 10px;  /* Buton ve menü öğeleri arasında boşluk ekler */
   }
 
   .form iframe {
