@@ -131,12 +131,41 @@ main {
   padding: 10px 20px;
   cursor: pointer;
   text-decoration: none;
-  margin-top: 15px; 
+  margin-bottom: 20px;
+  margin-top: 0;
 }
 
 .kartla-ode:hover {
   background-color: #fff;
   color: #e21111;
+}
+
+footer {
+  background-color: rgb(56, 56, 56);
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.sosyal-medya {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.sosyal-medya a {
+  margin: 0 10px;
+  color: white;
+  font-size: 24px;
+  transition: 0.3s;
+}
+
+.sosyal-medya a:hover {
+  color: #e21111;
+}
+
+.telif-hakkı {
+  margin: 0;
 }
 
 footer {
@@ -183,7 +212,7 @@ footer {
     font-size: 14px;
   }
 
-  .kartla-ode {
+  .odeme-bilgileri .kartla-ode {
     margin-right: 20px;
   }
 }
@@ -211,7 +240,7 @@ nav a {
   width: 100%;
 }
 
-.kartla-ode {
+.odeme-bilgileri .kartla-ode {
   margin-right: 0;
   width: 100%;
 }
