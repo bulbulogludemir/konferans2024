@@ -79,6 +79,43 @@ main {
   padding: 20px;
 }
 
+.geri-sayim {
+  background-color: #ffffff;
+  margin: 20px auto;
+  padding: 20px;
+  width: 80%;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.geri-sayim h2 {
+  font-size: 24px;
+  font-weight: bold;
+  color: black;
+  margin-bottom: 10px;
+}
+
+.sayac {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.gunler, .saatler, .dakikalar, .saniyeler {
+  padding: 10px;
+  border: 1px solid #e21111;
+  border-radius: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #e21111;
+}
+
+.sayac span {
+  font-size: 24px;
+  font-weight: bold;
+}
+
 .icerik-bolmesi {
   background-color: #dadada;
   margin: 20px auto;
