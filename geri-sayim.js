@@ -6,7 +6,7 @@ const updateCountdown = () => {
 
   if (diff <= 0) {
     clearInterval(interval);
-    document.querySelector(".geri-sayim h2").textContent = "Konferans Başladı!";
+    document.querySelector(".geri-sayim h2").textContent = "Konferans Günü Geldi!";
     return;
   }
 
