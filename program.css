@@ -39,7 +39,7 @@ nav {
 }
 
 nav a {
-  margin-right: 20px;
+  margin-right: 10px;
   text-decoration: none;
   color: #ffffff;
 }
@@ -71,14 +71,15 @@ main {
   padding: 20px;
 }
 
-/* Program Selector Styles */
 .program-secici {
   display: flex;
   justify-content: center;
   margin-bottom: 20px;
+  align-items: center;
 }
 
 .gun-secici {
+  align-items: center;
   background-color: #e21111;
   color: white;
   border: none;
@@ -86,35 +87,35 @@ main {
   margin: 0 10px;
   cursor: pointer;
   border-radius: 5px;
-  font-weight: bold; /* Add for emphasis */
+  font-weight: bold;
 }
 
 .gun-secici.aktif {
   background-color: #000;
 }
 
-/* Program Table Styles */
 .program-tablo {
+  align-items: center;
   width: 100%;
   border-collapse: collapse;
-  margin-bottom: 20px; /* Add space below the table */
+  margin-bottom: 20px;
 }
 
 .program-tablo th,
 .program-tablo td {
   border: 1px solid #ddd;
-  padding: 12px; /* Increase padding for better readability */
+  padding: 12px;
   text-align: left;
 }
 
 .program-tablo th {
-  background-color: #e21111; /* Set a background color for headers */
+  background-color: #e21111;
   color: white;
   font-weight: bold;
 }
 
 .program-tablo tr:nth-child(even) {
-  background-color: #f2f2f2; /* Add alternating row colors */
+  background-color: #f2f2f2;
 }
 
 footer {
