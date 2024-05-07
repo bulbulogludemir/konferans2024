@@ -97,13 +97,24 @@ main {
 .program-tablo {
   width: 100%;
   border-collapse: collapse;
+  margin-bottom: 20px; /* Add space below the table */
 }
 
 .program-tablo th,
 .program-tablo td {
   border: 1px solid #ddd;
-  padding: 8px;
+  padding: 12px; /* Increase padding for better readability */
   text-align: left;
+}
+
+.program-tablo th {
+  background-color: #e21111; /* Set a background color for headers */
+  color: white;
+  font-weight: bold;
+}
+
+.program-tablo tr:nth-child(even) {
+  background-color: #f2f2f2; /* Add alternating row colors */
 }
 
 footer {
@@ -139,6 +150,14 @@ footer {
     margin-right: 20px;
     font-size: 14px;
   }
+
+  .program-secici {
+    flex-wrap: wrap;
+  }
+
+  .gun-secici {
+    margin-bottom: 10px;
+  }
 }
 
 @media (max-width: 767px) {
@@ -165,23 +184,6 @@ footer {
     padding: 10px 0;
     width: 100%;
   }
-}
-
-/* Media Queries for Responsiveness */
-@media (max-width: 900px) {
-  /* ... existing media queries ... */
-
-  .program-secici {
-    flex-wrap: wrap;
-  }
-
-  .gun-secici {
-    margin-bottom: 10px;
-  }
-}
-
-@media (max-width: 767px) {
-  /* ... existing media queries ... */
 
   .program-secici {
     flex-direction: column; 
@@ -189,5 +191,14 @@ footer {
 
   .gun-secici {
     width: 100%; 
+  }
+
+  .program-tablo {
+    font-size: 14px; /* Reduce font size on smaller screens */
+  }
+
+  .program-tablo th,
+  .program-tablo td {
+    padding: 8px; /* Reduce padding on smaller screens */
   }
 }
