@@ -1,4 +1,4 @@
-const targetDate = new Date("2024-05-10T00:00:00");
+const targetDate = new Date("2024-05-10T12:00:00");
 
 const updateCountdown = () => {
   const now = new Date();
@@ -6,7 +6,7 @@ const updateCountdown = () => {
 
   if (diff <= 0) {
     clearInterval(interval);
-    document.querySelector(".geri-sayim h2").textContent = "Konferans Günü Geldi!";
+    document.querySelector(".geri-sayim h2").textContent = "Konferans Başladı!";
     return;
   }
 
