@@ -71,8 +71,7 @@ main {
   padding: 20px;
 }
 
-/* ... existing styles ... */
-
+/* Program Selector Styles */
 .program-secici {
   display: flex;
   justify-content: center;
@@ -87,14 +86,24 @@ main {
   margin: 0 10px;
   cursor: pointer;
   border-radius: 5px;
+  font-weight: bold; /* Add for emphasis */
 }
 
 .gun-secici.aktif {
   background-color: #000;
 }
 
-.program-icerik {
-  /* Style as needed for program content */
+/* Program Table Styles */
+.program-tablo {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.program-tablo th,
+.program-tablo td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
 }
 
 footer {
@@ -155,5 +164,30 @@ footer {
     margin: 0 75px 0 75px;
     padding: 10px 0;
     width: 100%;
+  }
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 900px) {
+  /* ... existing media queries ... */
+
+  .program-secici {
+    flex-wrap: wrap;
+  }
+
+  .gun-secici {
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 767px) {
+  /* ... existing media queries ... */
+
+  .program-secici {
+    flex-direction: column; 
+  }
+
+  .gun-secici {
+    width: 100%; 
   }
 }
